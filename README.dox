@@ -1,0 +1,26 @@
+/**
+@mainpage Game Engine Development II Final Assignment
+
+@author Jeongyeon Jane Hong and Pauleen Lam
+
+@attention 
+
+@note PLAYER CONTROLS:
+
+@note TitleState
+[P key -> Go to MainMenu]
+
+@note MainMenuState
+[Arrows Up/Down + Enter Key -> Select Button]
+[Play -> Go to GameState]
+[Exit -> Close Window]
+
+@note GameState
+[WASD -> Player Movement]
+[P -> Pause Key]
+
+@note PauseState
+[P -> Back to Game]
+[R -> Go to MainMenu]
+
+**/

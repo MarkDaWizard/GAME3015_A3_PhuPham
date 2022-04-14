@@ -1,0 +1,70 @@
+﻿  compilation object save succeeded; see C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\Debug\Default.cso
+  AirCraft.cpp
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\AirCraft.cpp(64): error C2102: '&' requires l-value
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\AirCraft.cpp(65): error C2102: '&' requires l-value
+  Command.cpp
+  CommandQueue.cpp
+  Camera.cpp
+  d3dApp.cpp
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\Common\d3dApp.cpp(199): error C2102: '&' requires l-value
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\Common\d3dApp.cpp(216): error C2102: '&' requires l-value
+  d3dUtil.cpp
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\Common\d3dUtil.cpp(30,5): warning C4244: 'argument': conversion from 'std::streamoff' to 'SIZE_T', possible loss of data
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\Common\d3dUtil.cpp(48): error C2102: '&' requires l-value
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\Common\d3dUtil.cpp(58): error C2102: '&' requires l-value
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\Common\d3dUtil.cpp(70,32): warning C4244: '=': conversion from 'UINT64' to 'LONG_PTR', possible loss of data
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\Common\d3dUtil.cpp(76): error C2102: '&' requires l-value
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\Common\d3dUtil.cpp(79): error C2102: '&' requires l-value
+  DDSTextureLoader.cpp
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\Common\DDSTextureLoader.cpp(1273): error C2102: '&' requires l-value
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\Common\DDSTextureLoader.cpp(1292): error C2102: '&' requires l-value
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\Common\DDSTextureLoader.cpp(1294): error C2102: '&' requires l-value
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\Common\DDSTextureLoader.cpp(1305): error C2102: '&' requires l-value
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\Common\DDSTextureLoader.cpp(1311): error C2102: '&' requires l-value
+  GameTimer.cpp
+  GeometryGenerator.cpp
+  MathHelper.cpp
+  Entity.cpp
+  FrameResource.cpp
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\Common\UploadBuffer.h(24): error C2102: '&' requires l-value
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\Common\UploadBuffer.h(9): message : while compiling class template member function 'UploadBuffer<PassConstants>::UploadBuffer(ID3D12Device *,UINT,bool)'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3416): message : see reference to function template instantiation 'UploadBuffer<PassConstants>::UploadBuffer(ID3D12Device *,UINT,bool)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3119): message : see reference to class template instantiation 'UploadBuffer<PassConstants>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3118): message : while compiling class template member function 'void std::default_delete<UploadBuffer<PassConstants>>::operator ()(_Ty *) noexcept const'
+          with
+          [
+              _Ty=UploadBuffer<PassConstants>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3230): message : see reference to function template instantiation 'void std::default_delete<UploadBuffer<PassConstants>>::operator ()(_Ty *) noexcept const' being compiled
+          with
+          [
+              _Ty=UploadBuffer<PassConstants>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\memory(3157): message : see reference to class template instantiation 'std::default_delete<UploadBuffer<PassConstants>>' being compiled
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\FrameResource.h(70): message : see reference to class template instantiation 'std::unique_ptr<UploadBuffer<PassConstants>,std::default_delete<UploadBuffer<PassConstants>>>' being compiled
+  Game.cpp
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\Game.cpp(144): error C2102: '&' requires l-value
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\Game.cpp(136): error C2102: '&' requires l-value
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\Game.cpp(176): error C2102: '&' requires l-value
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\Game.cpp(295): error C2102: '&' requires l-value
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\Game.cpp(296): error C2102: '&' requires l-value
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\Game.cpp(297): error C2102: '&' requires l-value
+  GameInfo.cpp
+  GameState.cpp
+  Image.cpp
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\Image.cpp(29): error C2102: '&' requires l-value
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\Image.cpp(30): error C2102: '&' requires l-value
+  MenuState.cpp
+  PauseState.cpp
+  Player.cpp
+  SceneNode.cpp
+  Generating Code...
+  Compiling...
+  ScrollingGround.cpp
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\ScrollingGround.cpp(39): error C2102: '&' requires l-value
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\ScrollingGround.cpp(40): error C2102: '&' requires l-value
+  State.cpp
+  StateStack.cpp
+  TitleState.cpp
+  World.cpp
+  Generating Code...

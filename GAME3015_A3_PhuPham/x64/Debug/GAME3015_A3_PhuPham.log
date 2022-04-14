@@ -1,0 +1,36 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (GAME3015_A2_LamHong.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  compilation object save succeeded; see C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\x64\Debug\Default.cso
+  AirCraft.cpp
+  Command.cpp
+  CommandQueue.cpp
+  Camera.cpp
+  d3dApp.cpp
+  d3dUtil.cpp
+  DDSTextureLoader.cpp
+  GameTimer.cpp
+  GeometryGenerator.cpp
+  MathHelper.cpp
+  Entity.cpp
+  FrameResource.cpp
+  Game.cpp
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\Game.cpp(394,52): warning C4267: '=': conversion from 'size_t' to 'UINT', possible loss of data
+  GameInfo.cpp
+  GameState.cpp
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\GameState.cpp(110,52): warning C4267: '=': conversion from 'size_t' to 'UINT', possible loss of data
+  Image.cpp
+  MenuState.cpp
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\MenuState.cpp(105,52): warning C4267: '=': conversion from 'size_t' to 'UINT', possible loss of data
+  PauseState.cpp
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\PauseState.cpp(69,52): warning C4267: '=': conversion from 'size_t' to 'UINT', possible loss of data
+  Player.cpp
+  SceneNode.cpp
+  Generating Code...
+  Compiling...
+  ScrollingGround.cpp
+  State.cpp
+  StateStack.cpp
+  TitleState.cpp
+C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\GAME3015_A3_PhuPham\TitleState.cpp(66,52): warning C4267: '=': conversion from 'size_t' to 'UINT', possible loss of data
+  World.cpp
+  Generating Code...
+  GAME3015_A3_PhuPham.vcxproj -> C:\Users\Asus GM501\Desktop\GAME3015_A2_LamHong\x64\Debug\GAME3015_A3_PhuPham.exe

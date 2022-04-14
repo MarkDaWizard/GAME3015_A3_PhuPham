@@ -5,7 +5,7 @@
 #include "Player.h"
 #include "AirCraft.h"
 #include "Entity.h"
-#include "ScrollingGround.h"
+#include "Terrain.h"
 
 class StateStack;
 class GameState	:
@@ -16,11 +16,18 @@ public:
 	virtual ~GameState();
 
 private:
-	ScrollingGround* bg1 = new ScrollingGround;
-	ScrollingGround* bg2 = new ScrollingGround;
-	AirCraft* Enemy = new AirCraft;
-	AirCraft* PlayerAirCraft = new AirCraft;
+	//Terrain
+	Terrain* bg1 = new Terrain;
+	Terrain* bg2 = new Terrain;
+	//Enemies
+	Aircraft* Enemy = new Aircraft;
+	//Player
+	Aircraft* PlayerAirCraft = new Aircraft;
 	Player* player = new Player;
+	//Wingman
+	Aircraft* Wingman1 = new Aircraft;
+	Aircraft* Wingman2 = new Aircraft;
+	//Cmd Queue
 	CommandQueue	m_CommandQueue;
 
 public:

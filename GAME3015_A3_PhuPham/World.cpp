@@ -82,41 +82,6 @@ void World::buildWorld(ID3D12Device* Device, ID3D12GraphicsCommandList* CmdList)
 
 	m_RootNode->AddChild(bg1);
 
-	//bg2->SetPos(XMFLOAT3(0.f, 0.f, 145.f));
-	//bg2->SetScale(XMFLOAT3(160.f, 145.f, 1.f));
-	//bg2->SetRot(XMFLOAT3(3.14159f / 2.f, 0.f, 0.f));
-	//bg2->SetMBIndex(0);
-	//bg2->m_TexIndex = 0;
-
-	//m_RootNode->AddChild(bg2);
-
-	//// ENEMY Character
-	//Enemy->SetStartPos(XMFLOAT3(0.f, 10.f, 15.f));
-	//Enemy->SetScale(XMFLOAT3(10.f, 10.f, 1.f));
-	//Enemy->SetRot(XMFLOAT3(3.14159f / 2.f, 0.f, 0.f));
-	//Enemy->SetMBIndex(2);
-	//Enemy->SetCategory(Category::Enemy);
-	//Enemy->m_TexIndex = 2;
-
-	//m_RootNode->AddChild(Enemy);
-
-	//// PLAYER Character
-	//PlayerAirCraft->SetStartPos(XMFLOAT3(0.f, 10.f, -25.f));
-	//PlayerAirCraft->SetScale(XMFLOAT3(10.f, 10.f, 1.f));
-	//PlayerAirCraft->SetRot(XMFLOAT3(3.14159f / 2.f, 0.f, 0.f));
-	//PlayerAirCraft->SetMBIndex(1);
-	//PlayerAirCraft->SetCategory(Category::Player);
-	//PlayerAirCraft->m_TexIndex = 1;
-
-	//m_RootNode->AddChild(PlayerAirCraft);
-
-	//// PLAYER
-	////m_RootNode->AddChild(player);
-
-	//player->AssignKey(Action::MoveFront, VK_UP);
-	//player->AssignKey(Action::MoveBack, VK_DOWN);
-	//player->AssignKey(Action::MoveLeft, VK_LEFT);
-	//player->AssignKey(Action::MoveRight, VK_RIGHT);
 }
 
 void World::ProcessInput()

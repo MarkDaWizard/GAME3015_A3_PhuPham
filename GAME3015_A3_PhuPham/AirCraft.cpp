@@ -1,18 +1,18 @@
-#include "AirCraft.h"
+#include "Aircraft.h"
 
-AirCraft::AirCraft()
+Aircraft::Aircraft()
 {
-	m_velocity = XMFLOAT3(20.f,0.f,0.f);
+	m_velocity = XMFLOAT3(40.f,0.f,0.f);
 	m_Dir = 1.f;
 	m_Category = Category::Enemy;
 	offsetLimit = 25;
 }
 
-AirCraft::~AirCraft()
+Aircraft::~Aircraft()
 {
 }
 
-void AirCraft::Update(float DeltaTime, FrameResource* Frame)
+void Aircraft::Update(float DeltaTime, FrameResource* Frame)
 {
 	Entity::Update(DeltaTime, Frame);
 
@@ -49,7 +49,7 @@ void AirCraft::Update(float DeltaTime, FrameResource* Frame)
 	}
 }
 
-void AirCraft::Draw(ID3D12GraphicsCommandList* CmdList, ID3D12DescriptorHeap* Desc,
+void Aircraft::Draw(ID3D12GraphicsCommandList* CmdList, ID3D12DescriptorHeap* Desc,
 	UINT DescSize, struct FrameResource* Frame,
 	MeshGeometry* Mesh, float DeltaTime)
 {

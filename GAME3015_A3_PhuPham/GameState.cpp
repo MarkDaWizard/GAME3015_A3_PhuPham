@@ -54,7 +54,7 @@ void GameState::Init(ID3D12Device* Device, ID3D12GraphicsCommandList* CmdList)
 	// ENEMY Character
 	Enemy->SetStartPos(XMFLOAT3(0.f, 10.f, 15.f));
 	Enemy->SetScale(XMFLOAT3(10.f, 10.f, 1.f));
-	Enemy->SetRot(XMFLOAT3(3.14159f / 2.f, 0.f, 0.f));
+	Enemy->SetRot(XMFLOAT3(3.14159f / 2.f, 0.f, 00.f));
 	Enemy->SetMBIndex(2);
 	Enemy->SetCategory(Category::Enemy);
 	Enemy->SetTexIndex(2);
@@ -71,13 +71,28 @@ void GameState::Init(ID3D12Device* Device, ID3D12GraphicsCommandList* CmdList)
 
 	m_RootNode->AddChild(PlayerAirCraft);
 
+	//Wingman
+	Wingman1->SetStartPos(XMFLOAT3(10.f, 10.f, -25.f));
+	Wingman1->SetScale(XMFLOAT3(5.f, 5.f, 1.f));
+	Wingman1->SetRot(XMFLOAT3(3.14159f / 2.f, 0.f, 0.f));
+	Wingman1->SetMBIndex(1);
+	Wingman1->SetCategory(Category::Player);
+	Wingman1->SetTexIndex(1);
+
+	m_RootNode->AddChild(Wingman1);
+
+	Wingman2->SetStartPos(XMFLOAT3(-10.f, 10.f, -25.f));
+	Wingman2->SetScale(XMFLOAT3(5.f, 5.f, 1.f));
+	Wingman2->SetRot(XMFLOAT3(3.14159f / 2.f, 0.f, 0.f));
+	Wingman2->SetMBIndex(1);
+	Wingman2->SetCategory(Category::Player);
+	Wingman2->SetTexIndex(1);
+
+	m_RootNode->AddChild(Wingman2);
 	// PLAYER
 	m_RootNode->AddChild(player);
 
-	//player->AssignKey(Action::MoveFront, VK_UP);
-	//player->AssignKey(Action::MoveBack, VK_DOWN);
-	//player->AssignKey(Action::MoveLeft, VK_LEFT);
-	//player->AssignKey(Action::MoveRight, VK_RIGHT);
+
 }
 
 bool GameState::Update(float DeltaTime, FrameResource* Frame)

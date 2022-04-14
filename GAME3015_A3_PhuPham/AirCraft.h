@@ -5,12 +5,12 @@
 /// <summary>
 /// A plane that will act as an enemy character
 /// </summary>
-class AirCraft	:
+class Aircraft	:
 	public Entity
 {
 public:
-	AirCraft();
-	~AirCraft();
+	Aircraft();
+	~Aircraft();
 
 private:
 	float	m_Dir;

@@ -140,7 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AirCraft.cpp" />
+    <ClCompile Include="Aircraft.cpp" />
     <ClCompile Include="Command.cpp" />
     <ClCompile Include="CommandQueue.cpp" />
     <ClCompile Include="Common\Camera.cpp" />
@@ -160,14 +160,14 @@
     <ClCompile Include="PauseState.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="SceneNode.cpp" />
-    <ClCompile Include="ScrollingGround.cpp" />
+    <ClCompile Include="Terrain.cpp" />
     <ClCompile Include="State.cpp" />
     <ClCompile Include="StateStack.cpp" />
     <ClCompile Include="TitleState.cpp" />
     <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AirCraft.h" />
+    <ClInclude Include="Aircraft.h" />
     <ClInclude Include="Category.h" />
     <ClInclude Include="Command.h" />
     <ClInclude Include="CommandQueue.h" />
@@ -190,7 +190,7 @@
     <ClInclude Include="PauseState.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="SceneNode.h" />
-    <ClInclude Include="ScrollingGround.h" />
+    <ClInclude Include="Terrain.h" />
     <ClInclude Include="State.h" />
     <ClInclude Include="StateStack.h" />
     <ClInclude Include="TitleState.h" />

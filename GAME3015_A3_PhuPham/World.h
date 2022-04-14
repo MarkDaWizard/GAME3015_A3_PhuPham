@@ -1,9 +1,9 @@
 #pragma once
 
 #include "Entity.h"
-#include "ScrollingGround.h"
+#include "Terrain.h"
 #include "Player.h"
-#include "AirCraft.h"
+#include "Aircraft.h"
 #include "Image.h"
 
 /// <summary>
@@ -34,10 +34,10 @@ public:
 	// Actor nodes
 	//Entity* bg1 = new Entity;
 	//Entity* bg2 = new Entity;
-	ScrollingGround* bg1 = new ScrollingGround;
-	ScrollingGround* bg2 = new ScrollingGround;
-	AirCraft* Enemy = new AirCraft;
-	AirCraft* PlayerAirCraft = new AirCraft;
+	Terrain* bg1 = new Terrain;
+	Terrain* bg2 = new Terrain;
+	Aircraft* Enemy = new Aircraft;
+	Aircraft* PlayerAirCraft = new Aircraft;
 	Player* player = new Player;
 
 	/// <summary>

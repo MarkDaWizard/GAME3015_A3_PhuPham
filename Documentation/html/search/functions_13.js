@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['_7eaircraft_0',['~AirCraft',['../class_air_craft.html#a674d4edcf77e4b9a8a09006184b114f0',1,'AirCraft']]],
+  ['_7eaircraft_0',['~Aircraft',['../class_aircraft.html#aafd3e0af1c6b0b376d3da898d16a4ad1',1,'Aircraft']]],
   ['_7ecamera_1',['~Camera',['../class_camera.html#ad1897942d0ccf91052386388a497349f',1,'Camera']]],
   ['_7ed3dapp_2',['~D3DApp',['../class_d3_d_app.html#ab58c61812da3a6c656279c79c39f0600',1,'D3DApp']]],
   ['_7eentity_3',['~Entity',['../class_entity.html#adf6d3f7cb1b2ba029b6b048a395cc8ae',1,'Entity']]],
@@ -12,9 +12,9 @@ var searchData=
   ['_7epausestate_9',['~PauseState',['../class_pause_state.html#af5d47befed16ad991bd90f219d4985c7',1,'PauseState']]],
   ['_7eplayer_10',['~Player',['../class_player.html#a749d2c00e1fe0f5c2746f7505a58c062',1,'Player']]],
   ['_7escenenode_11',['~SceneNode',['../class_scene_node.html#a11be58b869975806f2ff5a627770fa2e',1,'SceneNode']]],
-  ['_7escrollingground_12',['~ScrollingGround',['../class_scrolling_ground.html#a1d1d71eb13b1fa8f95c3812900ba30e5',1,'ScrollingGround']]],
-  ['_7estate_13',['~State',['../class_state.html#afab438d92b90dc18d194dbd9c9c8bab3',1,'State']]],
-  ['_7estatestack_14',['~StateStack',['../class_state_stack.html#ab2d31c81756ff400d3edfac2a5c3456c',1,'StateStack']]],
+  ['_7estate_12',['~State',['../class_state.html#afab438d92b90dc18d194dbd9c9c8bab3',1,'State']]],
+  ['_7estatestack_13',['~StateStack',['../class_state_stack.html#ab2d31c81756ff400d3edfac2a5c3456c',1,'StateStack']]],
+  ['_7eterrain_14',['~Terrain',['../class_terrain.html#a2f7f0a2aee54886324ccf48a6f321de0',1,'Terrain']]],
   ['_7etitlestate_15',['~TitleState',['../class_title_state.html#aa795c3691ae66d0f33ec64b9536839e0',1,'TitleState']]],
   ['_7euploadbuffer_16',['~UploadBuffer',['../class_upload_buffer.html#a0e530159492ad21fe575ce0f43e9ebe7',1,'UploadBuffer']]],
   ['_7eworld_17',['~World',['../class_world.html#a8c73fba541a5817fff65147ba47cd827',1,'World']]]

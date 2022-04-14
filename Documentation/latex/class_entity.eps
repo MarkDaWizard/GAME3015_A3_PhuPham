@@ -5,7 +5,7 @@
 %%For: 
 %Magnification: 1.00
 %%Orientation: Portrait
-%%BoundingBox: 0 0 500 133.928574
+%%BoundingBox: 0 0 500 174.418610
 %%Pages: 0
 %%BeginSetup
 %%EndSetup
@@ -19,7 +19,7 @@
 /marginwidth 10 def
 /distx 20 def
 /disty 40 def
-/boundaspect 3.733333 def  % aspect ratio of the BoundingBox (width/height)
+/boundaspect 2.866667 def  % aspect ratio of the BoundingBox (width/height)
 /boundx 500 def
 /boundy boundx boundaspect div def
 /xspacing 0 def
@@ -175,10 +175,10 @@ boxfont setfont
 1 boundaspect scale
 (Entity) cw
 (SceneNode) cw
-(AirCraft) cw
+(Aircraft) cw
 (Image) cw
 (Player) cw
-(ScrollingGround) cw
+(Terrain) cw
 /boxwidth boxwidth marginwidth 2 mul add def
 /xspacing boxwidth distx add def
 /yspacing boxheight disty add def
@@ -192,10 +192,10 @@ boundx scalefactor div boundy scalefactor div scale
 
  (Entity) 1.500000 1.000000 box
  (SceneNode) 1.500000 2.000000 box
- (AirCraft) 0.000000 0.000000 box
+ (Aircraft) 0.000000 0.000000 box
  (Image) 1.000000 0.000000 box
  (Player) 2.000000 0.000000 box
- (ScrollingGround) 3.000000 0.000000 box
+ (Terrain) 3.000000 0.000000 box
 
 % ----- relations -----
 

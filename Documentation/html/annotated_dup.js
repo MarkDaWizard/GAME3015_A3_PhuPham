@@ -1,6 +1,6 @@
 var annotated_dup =
 [
-    [ "AirCraft", "class_air_craft.html", "class_air_craft" ],
+    [ "Aircraft", "class_aircraft.html", "class_aircraft" ],
     [ "AircraftMover", "struct_aircraft_mover.html", "struct_aircraft_mover" ],
     [ "Camera", "class_camera.html", "class_camera" ],
     [ "Command", "class_command.html", "class_command" ],
@@ -30,10 +30,10 @@ var annotated_dup =
     [ "Player", "class_player.html", "class_player" ],
     [ "RenderItem", "class_render_item.html", "class_render_item" ],
     [ "SceneNode", "class_scene_node.html", "class_scene_node" ],
-    [ "ScrollingGround", "class_scrolling_ground.html", "class_scrolling_ground" ],
     [ "State", "class_state.html", "class_state" ],
     [ "StateStack", "class_state_stack.html", "class_state_stack" ],
     [ "SubmeshGeometry", "struct_submesh_geometry.html", "struct_submesh_geometry" ],
+    [ "Terrain", "class_terrain.html", "class_terrain" ],
     [ "Texture", "struct_texture.html", "struct_texture" ],
     [ "TitleState", "class_title_state.html", "class_title_state" ],
     [ "UploadBuffer", "class_upload_buffer.html", "class_upload_buffer" ],

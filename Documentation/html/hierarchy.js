@@ -26,10 +26,10 @@ var hierarchy =
     [ "RenderItem", "class_render_item.html", null ],
     [ "SceneNode", "class_scene_node.html", [
       [ "Entity", "class_entity.html", [
-        [ "AirCraft", "class_air_craft.html", null ],
+        [ "Aircraft", "class_aircraft.html", null ],
         [ "Image", "class_image.html", null ],
         [ "Player", "class_player.html", null ],
-        [ "ScrollingGround", "class_scrolling_ground.html", null ]
+        [ "Terrain", "class_terrain.html", null ]
       ] ]
     ] ],
     [ "State", "class_state.html", [

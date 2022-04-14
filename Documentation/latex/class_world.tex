@@ -35,13 +35,13 @@ std\+::map$<$ std\+::string, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{struct_m
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_scene_node}{Scene\+Node}} list keeps all entities to be rendered when \mbox{\hyperlink{class_world_a49d6a1ac236041e2d71fdca61adf31e3}{Draw()}} is called. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_command_queue}{Command\+Queue}} \mbox{\hyperlink{class_world_a84235f7673d37edc3b11dd8f1ee00e08}{m\+\_\+\+Command\+Queue}}
 \item 
-\mbox{\hyperlink{class_scrolling_ground}{Scrolling\+Ground}} $\ast$ \mbox{\hyperlink{class_world_a0d2ed97d72cb2a0f79594b76bfb30c9b}{bg1}} = new \mbox{\hyperlink{class_scrolling_ground}{Scrolling\+Ground}}
+\mbox{\hyperlink{class_terrain}{Terrain}} $\ast$ \mbox{\hyperlink{class_world_aaf7547cbbb6ff42ea295326507c28c07}{bg1}} = new \mbox{\hyperlink{class_terrain}{Terrain}}
 \item 
-\mbox{\hyperlink{class_scrolling_ground}{Scrolling\+Ground}} $\ast$ \mbox{\hyperlink{class_world_adb2da33ea855cea1b9c7af3d6838aab1}{bg2}} = new \mbox{\hyperlink{class_scrolling_ground}{Scrolling\+Ground}}
+\mbox{\hyperlink{class_terrain}{Terrain}} $\ast$ \mbox{\hyperlink{class_world_a52a9dab96d077e10a76d901117e455d2}{bg2}} = new \mbox{\hyperlink{class_terrain}{Terrain}}
 \item 
-\mbox{\hyperlink{class_air_craft}{Air\+Craft}} $\ast$ \mbox{\hyperlink{class_world_a0ecc7205c5682e29d21e4144844465c9}{Enemy}} = new \mbox{\hyperlink{class_air_craft}{Air\+Craft}}
+\mbox{\hyperlink{class_aircraft}{Aircraft}} $\ast$ \mbox{\hyperlink{class_world_a3c438b172f941d8d026dd45ae3ddfc1a}{Enemy}} = new \mbox{\hyperlink{class_aircraft}{Aircraft}}
 \item 
-\mbox{\hyperlink{class_air_craft}{Air\+Craft}} $\ast$ \mbox{\hyperlink{class_world_a55752d2beb7e512cbfa7da945523fdaf}{Player\+Air\+Craft}} = new \mbox{\hyperlink{class_air_craft}{Air\+Craft}}
+\mbox{\hyperlink{class_aircraft}{Aircraft}} $\ast$ \mbox{\hyperlink{class_world_a84be6a6cb094786c1b2ce6d470d26259}{Player\+Air\+Craft}} = new \mbox{\hyperlink{class_aircraft}{Aircraft}}
 \item 
 \mbox{\hyperlink{class_player}{Player}} $\ast$ \mbox{\hyperlink{class_world_addf54f12f3a1e9c8f120265bafa3474e}{player}} = new \mbox{\hyperlink{class_player}{Player}}
 \end{DoxyCompactItemize}
@@ -145,23 +145,23 @@ Call all updates for each entity in the rootnode list and scroll the backgrounf
 
 
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{class_world_a0d2ed97d72cb2a0f79594b76bfb30c9b}\label{class_world_a0d2ed97d72cb2a0f79594b76bfb30c9b}} 
+\mbox{\Hypertarget{class_world_aaf7547cbbb6ff42ea295326507c28c07}\label{class_world_aaf7547cbbb6ff42ea295326507c28c07}} 
 \index{World@{World}!bg1@{bg1}}
 \index{bg1@{bg1}!World@{World}}
 \doxysubsubsection{\texorpdfstring{bg1}{bg1}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_scrolling_ground}{Scrolling\+Ground}}$\ast$ World\+::bg1 = new \mbox{\hyperlink{class_scrolling_ground}{Scrolling\+Ground}}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_terrain}{Terrain}}$\ast$ World\+::bg1 = new \mbox{\hyperlink{class_terrain}{Terrain}}}
 
-\mbox{\Hypertarget{class_world_adb2da33ea855cea1b9c7af3d6838aab1}\label{class_world_adb2da33ea855cea1b9c7af3d6838aab1}} 
+\mbox{\Hypertarget{class_world_a52a9dab96d077e10a76d901117e455d2}\label{class_world_a52a9dab96d077e10a76d901117e455d2}} 
 \index{World@{World}!bg2@{bg2}}
 \index{bg2@{bg2}!World@{World}}
 \doxysubsubsection{\texorpdfstring{bg2}{bg2}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_scrolling_ground}{Scrolling\+Ground}}$\ast$ World\+::bg2 = new \mbox{\hyperlink{class_scrolling_ground}{Scrolling\+Ground}}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_terrain}{Terrain}}$\ast$ World\+::bg2 = new \mbox{\hyperlink{class_terrain}{Terrain}}}
 
-\mbox{\Hypertarget{class_world_a0ecc7205c5682e29d21e4144844465c9}\label{class_world_a0ecc7205c5682e29d21e4144844465c9}} 
+\mbox{\Hypertarget{class_world_a3c438b172f941d8d026dd45ae3ddfc1a}\label{class_world_a3c438b172f941d8d026dd45ae3ddfc1a}} 
 \index{World@{World}!Enemy@{Enemy}}
 \index{Enemy@{Enemy}!World@{World}}
 \doxysubsubsection{\texorpdfstring{Enemy}{Enemy}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_air_craft}{Air\+Craft}}$\ast$ World\+::\+Enemy = new \mbox{\hyperlink{class_air_craft}{Air\+Craft}}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_aircraft}{Aircraft}}$\ast$ World\+::\+Enemy = new \mbox{\hyperlink{class_aircraft}{Aircraft}}}
 
 \mbox{\Hypertarget{class_world_a84235f7673d37edc3b11dd8f1ee00e08}\label{class_world_a84235f7673d37edc3b11dd8f1ee00e08}} 
 \index{World@{World}!m\_CommandQueue@{m\_CommandQueue}}
@@ -201,11 +201,11 @@ Rootnode keeps the entities in the scene, this would be the backgrounds, charact
 \doxysubsubsection{\texorpdfstring{player}{player}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}}$\ast$ World\+::player = new \mbox{\hyperlink{class_player}{Player}}}
 
-\mbox{\Hypertarget{class_world_a55752d2beb7e512cbfa7da945523fdaf}\label{class_world_a55752d2beb7e512cbfa7da945523fdaf}} 
+\mbox{\Hypertarget{class_world_a84be6a6cb094786c1b2ce6d470d26259}\label{class_world_a84be6a6cb094786c1b2ce6d470d26259}} 
 \index{World@{World}!PlayerAirCraft@{PlayerAirCraft}}
 \index{PlayerAirCraft@{PlayerAirCraft}!World@{World}}
 \doxysubsubsection{\texorpdfstring{PlayerAirCraft}{PlayerAirCraft}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_air_craft}{Air\+Craft}}$\ast$ World\+::\+Player\+Air\+Craft = new \mbox{\hyperlink{class_air_craft}{Air\+Craft}}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_aircraft}{Aircraft}}$\ast$ World\+::\+Player\+Air\+Craft = new \mbox{\hyperlink{class_aircraft}{Aircraft}}}
 
 
 

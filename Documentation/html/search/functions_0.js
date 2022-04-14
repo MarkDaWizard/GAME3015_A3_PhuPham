@@ -2,7 +2,7 @@ var searchData=
 [
   ['addchild_0',['AddChild',['../class_scene_node.html#a0c5275e2cbbe05d7096cd41ecc9f2082',1,'SceneNode']]],
   ['addvelocity_1',['AddVelocity',['../class_entity.html#a04c410bfbadf2febed442763520411fe',1,'Entity']]],
-  ['aircraft_2',['AirCraft',['../class_air_craft.html#a7ffbd6f4da5c11951b751cc2767e6e0f',1,'AirCraft']]],
+  ['aircraft_2',['Aircraft',['../class_aircraft.html#a187c2e256b8c9c3f2f499f16fec31941',1,'Aircraft']]],
   ['aircraftmover_3',['AircraftMover',['../struct_aircraft_mover.html#a6b512a3e1d7e7a2a6860c317c08088f8',1,'AircraftMover']]],
   ['anglefromxy_4',['AngleFromXY',['../class_math_helper.html#a44b4f8f5faf51c790c87ebb7c2fc5c1e',1,'MathHelper']]],
   ['ansitowstring_5',['AnsiToWString',['../d3d_util_8h.html#a945382836f0cc7b4a16495f63cc76975',1,'d3dUtil.h']]],

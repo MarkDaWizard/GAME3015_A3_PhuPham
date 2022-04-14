@@ -65,7 +65,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_air_craft_8cpp.html",
+"_aircraft_8cpp.html",
 "class_d3_d_app.html#afa0d546d52408a9b55866e6ba065ddae",
 "functions_func_h.html"
 ];

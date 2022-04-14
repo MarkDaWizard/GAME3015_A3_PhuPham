@@ -1,0 +1,354 @@
+\hypertarget{class_scene_node}{}\doxysection{Scene\+Node Class Reference}
+\label{class_scene_node}\index{SceneNode@{SceneNode}}
+
+
+{\ttfamily \#include $<$Scene\+Node.\+h$>$}
+
+Inheritance diagram for Scene\+Node\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_scene_node}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scene_node_acc2e7940323560ba86dad8e2d6eb6690}{Scene\+Node}} ()
+\item 
+virtual \mbox{\hyperlink{class_scene_node_a11be58b869975806f2ff5a627770fa2e}{$\sim$\+Scene\+Node}} ()
+\item 
+\mbox{\hyperlink{_category_8h_a9ca8f05608edcbf85ab6c2c85a439ccb}{Category}} \mbox{\hyperlink{class_scene_node_a2091ebc747cdbeb3c29a43ef800ed5ee}{Get\+Category}} () const
+\item 
+void \mbox{\hyperlink{class_scene_node_aaf97b8e07346cc3db241726b2e8b192e}{Set\+Category}} (\mbox{\hyperlink{_category_8h_a9ca8f05608edcbf85ab6c2c85a439ccb}{Category}} Type)
+\item 
+int \mbox{\hyperlink{class_scene_node_a70ac4cc49e8b654c1cfed634acfae37d}{Get\+Tex\+Index}} () const
+\item 
+void \mbox{\hyperlink{class_scene_node_a035b94aef8a6516f439f382a1b9a1574}{Set\+Tex\+Index}} (int Index)
+\item 
+void \mbox{\hyperlink{class_scene_node_a2dc32f32b3baf3b8bc03367fcb8a6f7f}{Set\+MBIndex}} (int Index)
+\item 
+const XMFLOAT3 \& \mbox{\hyperlink{class_scene_node_ad50a6e215bab80634b6766a9bcd8a34d}{Get\+Scale}} () const
+\item 
+const XMFLOAT3 \& \mbox{\hyperlink{class_scene_node_a2c95ebec2b379f1ed03ad3ce17fde306}{Get\+Rotation}} () const
+\item 
+const XMFLOAT3 \& \mbox{\hyperlink{class_scene_node_aaebde8683ff39183ec3aaddd261379de}{Get\+Pos}} () const
+\item 
+void \mbox{\hyperlink{class_scene_node_aa28ef534fac93d583388e61e26d863b9}{Set\+Scale}} (const XMFLOAT3 \&Scale)
+\item 
+void \mbox{\hyperlink{class_scene_node_a8b3f450fde826723e0e0c66c9fe77d68}{Set\+Scale}} (float x, float y, float z)
+\item 
+void \mbox{\hyperlink{class_scene_node_a49da44a1fd578be7df15556db6919914}{Set\+Rot}} (const XMFLOAT3 \&Rot)
+\item 
+void \mbox{\hyperlink{class_scene_node_a155eb0db136f6544230d97b75c918e5d}{Set\+Rot}} (float x, float y, float z)
+\item 
+void \mbox{\hyperlink{class_scene_node_a1eb858b9d59424bc2931ee3c5233ef13}{Set\+Pos}} (const XMFLOAT3 \&Pos)
+\item 
+void \mbox{\hyperlink{class_scene_node_a3c7854295ac230b90f80e192644c4ca3}{Set\+Pos}} (float x, float y, float z)
+\item 
+void \mbox{\hyperlink{class_scene_node_a045a6f9956aad4ac6c60bfd8dab79c5b}{Move}} (const XMFLOAT3 \&Move)
+\item 
+void \mbox{\hyperlink{class_scene_node_a272ad455fd176527733f7ed4c8202079}{Move}} (float x, float y, float z)
+\item 
+void \mbox{\hyperlink{class_scene_node_a0834df5618d4783af5f28e8df3c96e5d}{Move}} (const XMFLOAT3 \&Dir, float Speed, float Delta\+Time)
+\item 
+void \mbox{\hyperlink{class_scene_node_a932462d9a032022d28d27ef65764923b}{Move}} (const XMFLOAT3 \&Velocity, float Delta\+Time)
+\item 
+void \mbox{\hyperlink{class_scene_node_a0c5275e2cbbe05d7096cd41ecc9f2082}{Add\+Child}} (\mbox{\hyperlink{class_scene_node}{Scene\+Node}} $\ast$Child)
+\item 
+void \mbox{\hyperlink{class_scene_node_af718e350308b297e132b0d6201345b02}{On\+Command}} (const \mbox{\hyperlink{class_command}{Command}} \&Cmd, float Delta\+Time)
+\item 
+virtual void \mbox{\hyperlink{class_scene_node_aa801e799edb585d7e371ffacf4786f94}{Update}} (float Delta\+Time, struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$Frame)
+\item 
+virtual void \mbox{\hyperlink{class_scene_node_aad909ab9c606f4de006910b3586b9830}{Draw}} (ID3\+D12\+Graphics\+Command\+List $\ast$Cmd\+List, ID3\+D12\+Descriptor\+Heap $\ast$Desc, UINT Desc\+Size, struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$Frame, \mbox{\hyperlink{struct_mesh_geometry}{Mesh\+Geometry}} $\ast$Mesh, float Delta\+Time)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_scene_node_afb35484034ad91cbb9a35b4fcb4f785a}{m\+\_\+\+Global\+CBIndex}} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scene_node}{Scene\+Node}} $\ast$ \mbox{\hyperlink{class_scene_node_a0900fe740317dd97de10421a5e62d9e5}{m\+\_\+\+Parent}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_scene_node}{Scene\+Node}} $\ast$ $>$ \mbox{\hyperlink{class_scene_node_adeb9932c84312711cb7d7ba70685c61d}{m\+\_\+\+Child\+List}}
+\item 
+XMFLOAT3 \mbox{\hyperlink{class_scene_node_aabaa9ead621fa1844d2f10ec943b1c03}{m\+\_\+\+Scale}}
+\item 
+XMFLOAT3 \mbox{\hyperlink{class_scene_node_a65c407119966797cc8513b249206912e}{m\+\_\+\+Rot}}
+\item 
+XMFLOAT3 \mbox{\hyperlink{class_scene_node_ae2447b583e0037a45bbd33e1f4f07500}{m\+\_\+\+Pos}}
+\item 
+XMFLOAT4\+X4 \mbox{\hyperlink{class_scene_node_a103201cc39df413aa3816470dbeaed02}{m\+\_\+mat\+World}}
+\item 
+int \mbox{\hyperlink{class_scene_node_ae71ced48f373f227baa40bb85f92e310}{m\+\_\+\+CBIndex}}
+\item 
+int \mbox{\hyperlink{class_scene_node_a3e4620c8169585fda39f232192afdfda}{m\+\_\+\+MBIndex}}
+\item 
+int \mbox{\hyperlink{class_scene_node_add46ebd17408bc1de1c6b2fff071ed87}{m\+\_\+\+Tex\+Index}}
+\item 
+bool \mbox{\hyperlink{class_scene_node_ae453944f73755e53d380c8fe620a3921}{m\+\_\+\+Render}}
+\item 
+\mbox{\hyperlink{_category_8h_a9ca8f05608edcbf85ab6c2c85a439ccb}{Category}} \mbox{\hyperlink{class_scene_node_a5c84d7f8865c9a650c1322d10a6e5c1e}{m\+\_\+\+Category}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_scene_node_a7b4bcdf992c21ae83363f25df05b1d25}{World}}
+\item 
+class \mbox{\hyperlink{class_scene_node_aa2fab026580d6f14280c2ffb8063a314}{Game}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_scene_node_acc2e7940323560ba86dad8e2d6eb6690}\label{class_scene_node_acc2e7940323560ba86dad8e2d6eb6690}} 
+\index{SceneNode@{SceneNode}!SceneNode@{SceneNode}}
+\index{SceneNode@{SceneNode}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{SceneNode()}{SceneNode()}}
+{\footnotesize\ttfamily Scene\+Node\+::\+Scene\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_scene_node_a11be58b869975806f2ff5a627770fa2e}\label{class_scene_node_a11be58b869975806f2ff5a627770fa2e}} 
+\index{SceneNode@{SceneNode}!````~SceneNode@{$\sim$SceneNode}}
+\index{````~SceneNode@{$\sim$SceneNode}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{$\sim$SceneNode()}{~SceneNode()}}
+{\footnotesize\ttfamily Scene\+Node\+::$\sim$\+Scene\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_scene_node_a0c5275e2cbbe05d7096cd41ecc9f2082}\label{class_scene_node_a0c5275e2cbbe05d7096cd41ecc9f2082}} 
+\index{SceneNode@{SceneNode}!AddChild@{AddChild}}
+\index{AddChild@{AddChild}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{AddChild()}{AddChild()}}
+{\footnotesize\ttfamily void Scene\+Node\+::\+Add\+Child (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene_node}{Scene\+Node}} $\ast$}]{Child }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_scene_node_aad909ab9c606f4de006910b3586b9830}\label{class_scene_node_aad909ab9c606f4de006910b3586b9830}} 
+\index{SceneNode@{SceneNode}!Draw@{Draw}}
+\index{Draw@{Draw}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Scene\+Node\+::\+Draw (\begin{DoxyParamCaption}\item[{ID3\+D12\+Graphics\+Command\+List $\ast$}]{Cmd\+List,  }\item[{ID3\+D12\+Descriptor\+Heap $\ast$}]{Desc,  }\item[{UINT}]{Desc\+Size,  }\item[{struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$}]{Frame,  }\item[{\mbox{\hyperlink{struct_mesh_geometry}{Mesh\+Geometry}} $\ast$}]{Mesh,  }\item[{float}]{Delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_air_craft_a3c42ddee4359289e4bf1f69dae23e0ea}{Air\+Craft}}, \mbox{\hyperlink{class_entity_a1b58246ff050872e0c11ac8682db6aae}{Entity}}, \mbox{\hyperlink{class_image_a6a43d3efd11e65d49fc6fd51ce7a8a23}{Image}}, \mbox{\hyperlink{class_player_ae5251180c77c2b6fac97f2684d8b102e}{Player}}, and \mbox{\hyperlink{class_scrolling_ground_a8891811969a150dd1f01054bc8653071}{Scrolling\+Ground}}.
+
+\mbox{\Hypertarget{class_scene_node_a2091ebc747cdbeb3c29a43ef800ed5ee}\label{class_scene_node_a2091ebc747cdbeb3c29a43ef800ed5ee}} 
+\index{SceneNode@{SceneNode}!GetCategory@{GetCategory}}
+\index{GetCategory@{GetCategory}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{GetCategory()}{GetCategory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_category_8h_a9ca8f05608edcbf85ab6c2c85a439ccb}{Category}} Scene\+Node\+::\+Get\+Category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_scene_node_aaebde8683ff39183ec3aaddd261379de}\label{class_scene_node_aaebde8683ff39183ec3aaddd261379de}} 
+\index{SceneNode@{SceneNode}!GetPos@{GetPos}}
+\index{GetPos@{GetPos}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{GetPos()}{GetPos()}}
+{\footnotesize\ttfamily const XMFLOAT3 \& Scene\+Node\+::\+Get\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_scene_node_a2c95ebec2b379f1ed03ad3ce17fde306}\label{class_scene_node_a2c95ebec2b379f1ed03ad3ce17fde306}} 
+\index{SceneNode@{SceneNode}!GetRotation@{GetRotation}}
+\index{GetRotation@{GetRotation}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{GetRotation()}{GetRotation()}}
+{\footnotesize\ttfamily const XMFLOAT3 \& Scene\+Node\+::\+Get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_scene_node_ad50a6e215bab80634b6766a9bcd8a34d}\label{class_scene_node_ad50a6e215bab80634b6766a9bcd8a34d}} 
+\index{SceneNode@{SceneNode}!GetScale@{GetScale}}
+\index{GetScale@{GetScale}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{GetScale()}{GetScale()}}
+{\footnotesize\ttfamily const XMFLOAT3 \& Scene\+Node\+::\+Get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_scene_node_a70ac4cc49e8b654c1cfed634acfae37d}\label{class_scene_node_a70ac4cc49e8b654c1cfed634acfae37d}} 
+\index{SceneNode@{SceneNode}!GetTexIndex@{GetTexIndex}}
+\index{GetTexIndex@{GetTexIndex}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{GetTexIndex()}{GetTexIndex()}}
+{\footnotesize\ttfamily int Scene\+Node\+::\+Get\+Tex\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_scene_node_a0834df5618d4783af5f28e8df3c96e5d}\label{class_scene_node_a0834df5618d4783af5f28e8df3c96e5d}} 
+\index{SceneNode@{SceneNode}!Move@{Move}}
+\index{Move@{Move}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void Scene\+Node\+::\+Move (\begin{DoxyParamCaption}\item[{const XMFLOAT3 \&}]{Dir,  }\item[{float}]{Speed,  }\item[{float}]{Delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_scene_node_a045a6f9956aad4ac6c60bfd8dab79c5b}\label{class_scene_node_a045a6f9956aad4ac6c60bfd8dab79c5b}} 
+\index{SceneNode@{SceneNode}!Move@{Move}}
+\index{Move@{Move}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void Scene\+Node\+::\+Move (\begin{DoxyParamCaption}\item[{const XMFLOAT3 \&}]{Move }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_scene_node_a932462d9a032022d28d27ef65764923b}\label{class_scene_node_a932462d9a032022d28d27ef65764923b}} 
+\index{SceneNode@{SceneNode}!Move@{Move}}
+\index{Move@{Move}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void Scene\+Node\+::\+Move (\begin{DoxyParamCaption}\item[{const XMFLOAT3 \&}]{Velocity,  }\item[{float}]{Delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_scene_node_a272ad455fd176527733f7ed4c8202079}\label{class_scene_node_a272ad455fd176527733f7ed4c8202079}} 
+\index{SceneNode@{SceneNode}!Move@{Move}}
+\index{Move@{Move}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void Scene\+Node\+::\+Move (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_scene_node_af718e350308b297e132b0d6201345b02}\label{class_scene_node_af718e350308b297e132b0d6201345b02}} 
+\index{SceneNode@{SceneNode}!OnCommand@{OnCommand}}
+\index{OnCommand@{OnCommand}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{OnCommand()}{OnCommand()}}
+{\footnotesize\ttfamily void Scene\+Node\+::\+On\+Command (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_command}{Command}} \&}]{Cmd,  }\item[{float}]{Delta\+Time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_scene_node_aaf97b8e07346cc3db241726b2e8b192e}\label{class_scene_node_aaf97b8e07346cc3db241726b2e8b192e}} 
+\index{SceneNode@{SceneNode}!SetCategory@{SetCategory}}
+\index{SetCategory@{SetCategory}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{SetCategory()}{SetCategory()}}
+{\footnotesize\ttfamily void Scene\+Node\+::\+Set\+Category (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_category_8h_a9ca8f05608edcbf85ab6c2c85a439ccb}{Category}}}]{Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_scene_node_a2dc32f32b3baf3b8bc03367fcb8a6f7f}\label{class_scene_node_a2dc32f32b3baf3b8bc03367fcb8a6f7f}} 
+\index{SceneNode@{SceneNode}!SetMBIndex@{SetMBIndex}}
+\index{SetMBIndex@{SetMBIndex}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{SetMBIndex()}{SetMBIndex()}}
+{\footnotesize\ttfamily void Scene\+Node\+::\+Set\+MBIndex (\begin{DoxyParamCaption}\item[{int}]{Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_scene_node_a1eb858b9d59424bc2931ee3c5233ef13}\label{class_scene_node_a1eb858b9d59424bc2931ee3c5233ef13}} 
+\index{SceneNode@{SceneNode}!SetPos@{SetPos}}
+\index{SetPos@{SetPos}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{SetPos()}{SetPos()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Scene\+Node\+::\+Set\+Pos (\begin{DoxyParamCaption}\item[{const XMFLOAT3 \&}]{Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_scene_node_a3c7854295ac230b90f80e192644c4ca3}\label{class_scene_node_a3c7854295ac230b90f80e192644c4ca3}} 
+\index{SceneNode@{SceneNode}!SetPos@{SetPos}}
+\index{SetPos@{SetPos}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{SetPos()}{SetPos()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Scene\+Node\+::\+Set\+Pos (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_scene_node_a49da44a1fd578be7df15556db6919914}\label{class_scene_node_a49da44a1fd578be7df15556db6919914}} 
+\index{SceneNode@{SceneNode}!SetRot@{SetRot}}
+\index{SetRot@{SetRot}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{SetRot()}{SetRot()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Scene\+Node\+::\+Set\+Rot (\begin{DoxyParamCaption}\item[{const XMFLOAT3 \&}]{Rot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_scene_node_a155eb0db136f6544230d97b75c918e5d}\label{class_scene_node_a155eb0db136f6544230d97b75c918e5d}} 
+\index{SceneNode@{SceneNode}!SetRot@{SetRot}}
+\index{SetRot@{SetRot}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{SetRot()}{SetRot()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Scene\+Node\+::\+Set\+Rot (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_scene_node_aa28ef534fac93d583388e61e26d863b9}\label{class_scene_node_aa28ef534fac93d583388e61e26d863b9}} 
+\index{SceneNode@{SceneNode}!SetScale@{SetScale}}
+\index{SetScale@{SetScale}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{SetScale()}{SetScale()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Scene\+Node\+::\+Set\+Scale (\begin{DoxyParamCaption}\item[{const XMFLOAT3 \&}]{Scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_scene_node_a8b3f450fde826723e0e0c66c9fe77d68}\label{class_scene_node_a8b3f450fde826723e0e0c66c9fe77d68}} 
+\index{SceneNode@{SceneNode}!SetScale@{SetScale}}
+\index{SetScale@{SetScale}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{SetScale()}{SetScale()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Scene\+Node\+::\+Set\+Scale (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_scene_node_a035b94aef8a6516f439f382a1b9a1574}\label{class_scene_node_a035b94aef8a6516f439f382a1b9a1574}} 
+\index{SceneNode@{SceneNode}!SetTexIndex@{SetTexIndex}}
+\index{SetTexIndex@{SetTexIndex}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{SetTexIndex()}{SetTexIndex()}}
+{\footnotesize\ttfamily void Scene\+Node\+::\+Set\+Tex\+Index (\begin{DoxyParamCaption}\item[{int}]{Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_scene_node_aa801e799edb585d7e371ffacf4786f94}\label{class_scene_node_aa801e799edb585d7e371ffacf4786f94}} 
+\index{SceneNode@{SceneNode}!Update@{Update}}
+\index{Update@{Update}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Scene\+Node\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time,  }\item[{struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$}]{Frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_air_craft_a59a7de946c87389ef84aaee6fcbc6523}{Air\+Craft}}, \mbox{\hyperlink{class_entity_ac4025ea862585a94f6e27cecfae9423e}{Entity}}, \mbox{\hyperlink{class_image_abdc18969772c733bc4f93dd9faa45c16}{Image}}, \mbox{\hyperlink{class_player_a7b8ee868edd6de769ec57985b19a04d5}{Player}}, and \mbox{\hyperlink{class_scrolling_ground_a3bac81e814c8a0cec512b275ea82b378}{Scrolling\+Ground}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_scene_node_aa2fab026580d6f14280c2ffb8063a314}\label{class_scene_node_aa2fab026580d6f14280c2ffb8063a314}} 
+\index{SceneNode@{SceneNode}!Game@{Game}}
+\index{Game@{Game}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{Game}{Game}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_game}{Game}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{class_scene_node_a7b4bcdf992c21ae83363f25df05b1d25}\label{class_scene_node_a7b4bcdf992c21ae83363f25df05b1d25}} 
+\index{SceneNode@{SceneNode}!World@{World}}
+\index{World@{World}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{World}{World}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_world}{World}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_scene_node_a5c84d7f8865c9a650c1322d10a6e5c1e}\label{class_scene_node_a5c84d7f8865c9a650c1322d10a6e5c1e}} 
+\index{SceneNode@{SceneNode}!m\_Category@{m\_Category}}
+\index{m\_Category@{m\_Category}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{m\_Category}{m\_Category}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_category_8h_a9ca8f05608edcbf85ab6c2c85a439ccb}{Category}} Scene\+Node\+::m\+\_\+\+Category\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_scene_node_ae71ced48f373f227baa40bb85f92e310}\label{class_scene_node_ae71ced48f373f227baa40bb85f92e310}} 
+\index{SceneNode@{SceneNode}!m\_CBIndex@{m\_CBIndex}}
+\index{m\_CBIndex@{m\_CBIndex}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{m\_CBIndex}{m\_CBIndex}}
+{\footnotesize\ttfamily int Scene\+Node\+::m\+\_\+\+CBIndex\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_scene_node_adeb9932c84312711cb7d7ba70685c61d}\label{class_scene_node_adeb9932c84312711cb7d7ba70685c61d}} 
+\index{SceneNode@{SceneNode}!m\_ChildList@{m\_ChildList}}
+\index{m\_ChildList@{m\_ChildList}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{m\_ChildList}{m\_ChildList}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_scene_node}{Scene\+Node}}$\ast$$>$ Scene\+Node\+::m\+\_\+\+Child\+List\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_scene_node_afb35484034ad91cbb9a35b4fcb4f785a}\label{class_scene_node_afb35484034ad91cbb9a35b4fcb4f785a}} 
+\index{SceneNode@{SceneNode}!m\_GlobalCBIndex@{m\_GlobalCBIndex}}
+\index{m\_GlobalCBIndex@{m\_GlobalCBIndex}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{m\_GlobalCBIndex}{m\_GlobalCBIndex}}
+{\footnotesize\ttfamily int Scene\+Node\+::m\+\_\+\+Global\+CBIndex = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_scene_node_a103201cc39df413aa3816470dbeaed02}\label{class_scene_node_a103201cc39df413aa3816470dbeaed02}} 
+\index{SceneNode@{SceneNode}!m\_matWorld@{m\_matWorld}}
+\index{m\_matWorld@{m\_matWorld}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{m\_matWorld}{m\_matWorld}}
+{\footnotesize\ttfamily XMFLOAT4\+X4 Scene\+Node\+::m\+\_\+mat\+World\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_scene_node_a3e4620c8169585fda39f232192afdfda}\label{class_scene_node_a3e4620c8169585fda39f232192afdfda}} 
+\index{SceneNode@{SceneNode}!m\_MBIndex@{m\_MBIndex}}
+\index{m\_MBIndex@{m\_MBIndex}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{m\_MBIndex}{m\_MBIndex}}
+{\footnotesize\ttfamily int Scene\+Node\+::m\+\_\+\+MBIndex\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_scene_node_a0900fe740317dd97de10421a5e62d9e5}\label{class_scene_node_a0900fe740317dd97de10421a5e62d9e5}} 
+\index{SceneNode@{SceneNode}!m\_Parent@{m\_Parent}}
+\index{m\_Parent@{m\_Parent}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{m\_Parent}{m\_Parent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene_node}{Scene\+Node}}$\ast$ Scene\+Node\+::m\+\_\+\+Parent\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_scene_node_ae2447b583e0037a45bbd33e1f4f07500}\label{class_scene_node_ae2447b583e0037a45bbd33e1f4f07500}} 
+\index{SceneNode@{SceneNode}!m\_Pos@{m\_Pos}}
+\index{m\_Pos@{m\_Pos}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{m\_Pos}{m\_Pos}}
+{\footnotesize\ttfamily XMFLOAT3 Scene\+Node\+::m\+\_\+\+Pos\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_scene_node_ae453944f73755e53d380c8fe620a3921}\label{class_scene_node_ae453944f73755e53d380c8fe620a3921}} 
+\index{SceneNode@{SceneNode}!m\_Render@{m\_Render}}
+\index{m\_Render@{m\_Render}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{m\_Render}{m\_Render}}
+{\footnotesize\ttfamily bool Scene\+Node\+::m\+\_\+\+Render\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_scene_node_a65c407119966797cc8513b249206912e}\label{class_scene_node_a65c407119966797cc8513b249206912e}} 
+\index{SceneNode@{SceneNode}!m\_Rot@{m\_Rot}}
+\index{m\_Rot@{m\_Rot}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{m\_Rot}{m\_Rot}}
+{\footnotesize\ttfamily XMFLOAT3 Scene\+Node\+::m\+\_\+\+Rot\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_scene_node_aabaa9ead621fa1844d2f10ec943b1c03}\label{class_scene_node_aabaa9ead621fa1844d2f10ec943b1c03}} 
+\index{SceneNode@{SceneNode}!m\_Scale@{m\_Scale}}
+\index{m\_Scale@{m\_Scale}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{m\_Scale}{m\_Scale}}
+{\footnotesize\ttfamily XMFLOAT3 Scene\+Node\+::m\+\_\+\+Scale\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_scene_node_add46ebd17408bc1de1c6b2fff071ed87}\label{class_scene_node_add46ebd17408bc1de1c6b2fff071ed87}} 
+\index{SceneNode@{SceneNode}!m\_TexIndex@{m\_TexIndex}}
+\index{m\_TexIndex@{m\_TexIndex}!SceneNode@{SceneNode}}
+\doxysubsubsection{\texorpdfstring{m\_TexIndex}{m\_TexIndex}}
+{\footnotesize\ttfamily int Scene\+Node\+::m\+\_\+\+Tex\+Index\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+GAME3015\+\_\+\+A3\+\_\+\+Phu\+Pham/\mbox{\hyperlink{_scene_node_8h}{Scene\+Node.\+h}}\item 
+GAME3015\+\_\+\+A3\+\_\+\+Phu\+Pham/\mbox{\hyperlink{_scene_node_8cpp}{Scene\+Node.\+cpp}}\end{DoxyCompactItemize}

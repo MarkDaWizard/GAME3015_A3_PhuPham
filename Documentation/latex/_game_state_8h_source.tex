@@ -1,0 +1,44 @@
+\hypertarget{_game_state_8h_source}{}\doxysection{Game\+State.\+h}
+\label{_game_state_8h_source}\index{GAME3015\_A3\_PhuPham/GameState.h@{GAME3015\_A3\_PhuPham/GameState.h}}
+\mbox{\hyperlink{_game_state_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_state_8h}{State.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_image_8h}{Image.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_player_8h}{Player.h}}"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_air_craft_8h}{AirCraft.h}}"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_entity_8h}{Entity.h}}"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_scrolling_ground_8h}{ScrollingGround.h}}"{}}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_state_stack}{StateStack}};}
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_game_state}{GameState}}    :}
+\DoxyCodeLine{12     \textcolor{keyword}{public} \mbox{\hyperlink{class_state}{State}}}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14 \textcolor{keyword}{public}:}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_game_state_a861633b04bca32a10af4bc4d35aefc6d}{GameState}}(\mbox{\hyperlink{class_state_stack}{StateStack}}* stack);}
+\DoxyCodeLine{16     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_game_state_ae623df5042cd0c17daa3394fdcb397b3}{\string~GameState}}();}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{private}:}
+\DoxyCodeLine{19     \mbox{\hyperlink{class_scrolling_ground}{ScrollingGround}}* bg1 = \textcolor{keyword}{new} \mbox{\hyperlink{class_scrolling_ground}{ScrollingGround}};}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_scrolling_ground}{ScrollingGround}}* bg2 = \textcolor{keyword}{new} \mbox{\hyperlink{class_scrolling_ground}{ScrollingGround}};}
+\DoxyCodeLine{21     \mbox{\hyperlink{class_air_craft}{AirCraft}}* Enemy = \textcolor{keyword}{new} \mbox{\hyperlink{class_air_craft}{AirCraft}};}
+\DoxyCodeLine{22     \mbox{\hyperlink{class_air_craft}{AirCraft}}* PlayerAirCraft = \textcolor{keyword}{new} \mbox{\hyperlink{class_air_craft}{AirCraft}};}
+\DoxyCodeLine{23     \mbox{\hyperlink{class_player}{Player}}* player = \textcolor{keyword}{new} \mbox{\hyperlink{_category_8h_a9ca8f05608edcbf85ab6c2c85a439ccba636da1d35e805b00eae0fcd8333f9234}{Player}};}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_command_queue}{CommandQueue}}    m\_CommandQueue;}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{keyword}{public}:}
+\DoxyCodeLine{27     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_state_aaf255a97137afb613c3509da8f01aa06}{ProcessInput}}();}
+\DoxyCodeLine{28     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_state_a0fdda2ce81ad2587e8cc7bac2ec98370}{Init}}(ID3D12Device* Device, ID3D12GraphicsCommandList* CmdList);}
+\DoxyCodeLine{29     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_game_state_ab9b9669eb75cfeb77ea1fdca93e3b4bb}{Update}}(\textcolor{keywordtype}{float} DeltaTime, \textcolor{keyword}{struct} \mbox{\hyperlink{struct_frame_resource}{FrameResource}}* Frame);}
+\DoxyCodeLine{30     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_state_af16d43fd32c6c311f2e04437492f176e}{Draw}}(ID3D12GraphicsCommandList* CmdList, ID3D12DescriptorHeap* Desc,}
+\DoxyCodeLine{31         UINT DescSize, \textcolor{keyword}{struct} \mbox{\hyperlink{struct_frame_resource}{FrameResource}}* Frame,}
+\DoxyCodeLine{32         \textcolor{keywordtype}{float} DeltaTime);}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{keyword}{private}:}
+\DoxyCodeLine{35     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} LoadTextures();}
+\DoxyCodeLine{36     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} CreateMaterial();}
+\DoxyCodeLine{37 \};}
+\DoxyCodeLine{38 }
+
+\end{DoxyCode}

@@ -1,0 +1,35 @@
+\hypertarget{_pause_state_8h_source}{}\doxysection{Pause\+State.\+h}
+\label{_pause_state_8h_source}\index{GAME3015\_A3\_PhuPham/PauseState.h@{GAME3015\_A3\_PhuPham/PauseState.h}}
+\mbox{\hyperlink{_pause_state_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_state_8h}{State.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_image_8h}{Image.h}}"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{class }\mbox{\hyperlink{class_state_stack}{StateStack}};}
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{class_pause_state}{PauseState}}  :}
+\DoxyCodeLine{8     \textcolor{keyword}{public} \mbox{\hyperlink{class_state}{State}}}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10 \textcolor{keyword}{public}:}
+\DoxyCodeLine{11     \mbox{\hyperlink{class_pause_state_a272418d33c78c729ce9d4251a378b57c}{PauseState}}(\mbox{\hyperlink{class_state_stack}{StateStack}}* stack);}
+\DoxyCodeLine{12     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_pause_state_af5d47befed16ad991bd90f219d4985c7}{\string~PauseState}}();}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{private}:}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_image}{Image}}* Pause = \textcolor{keyword}{new} \mbox{\hyperlink{class_image}{Image}};}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{public}:}
+\DoxyCodeLine{18     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_pause_state_a2e3f69a4c530895bea1cfb1da4990d3e}{ProcessInput}}();}
+\DoxyCodeLine{19     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_pause_state_a9a2e06a61e4a2afaaaffd9618079690f}{Init}}(ID3D12Device* Device, ID3D12GraphicsCommandList* CmdList);}
+\DoxyCodeLine{20     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_pause_state_abac345e23a55340b3cae9495f3ccd1ad}{Update}}(\textcolor{keywordtype}{float} DeltaTime, \textcolor{keyword}{struct} \mbox{\hyperlink{struct_frame_resource}{FrameResource}}* Frame);}
+\DoxyCodeLine{21     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_pause_state_a8d34fffe9e80a299acfb06e00e442ff4}{Draw}}(ID3D12GraphicsCommandList* CmdList, ID3D12DescriptorHeap* Desc,}
+\DoxyCodeLine{22         UINT DescSize, \textcolor{keyword}{struct} \mbox{\hyperlink{struct_frame_resource}{FrameResource}}* Frame,}
+\DoxyCodeLine{23         \textcolor{keywordtype}{float} DeltaTime);}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{keyword}{private}:}
+\DoxyCodeLine{26     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} LoadTextures();}
+\DoxyCodeLine{27     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} CreateMaterial();}
+\DoxyCodeLine{28 \};}
+\DoxyCodeLine{29 }
+
+\end{DoxyCode}

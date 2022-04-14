@@ -1,0 +1,92 @@
+\hypertarget{class_pause_state}{}\doxysection{Pause\+State Class Reference}
+\label{class_pause_state}\index{PauseState@{PauseState}}
+
+
+{\ttfamily \#include $<$Pause\+State.\+h$>$}
+
+Inheritance diagram for Pause\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pause_state}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pause_state_a272418d33c78c729ce9d4251a378b57c}{Pause\+State}} (\mbox{\hyperlink{class_state_stack}{State\+Stack}} $\ast$stack)
+\item 
+virtual \mbox{\hyperlink{class_pause_state_af5d47befed16ad991bd90f219d4985c7}{$\sim$\+Pause\+State}} ()
+\item 
+virtual void \mbox{\hyperlink{class_pause_state_a2e3f69a4c530895bea1cfb1da4990d3e}{Process\+Input}} ()
+\item 
+virtual void \mbox{\hyperlink{class_pause_state_a9a2e06a61e4a2afaaaffd9618079690f}{Init}} (ID3\+D12\+Device $\ast$Device, ID3\+D12\+Graphics\+Command\+List $\ast$Cmd\+List)
+\item 
+virtual bool \mbox{\hyperlink{class_pause_state_abac345e23a55340b3cae9495f3ccd1ad}{Update}} (float Delta\+Time, struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$Frame)
+\item 
+virtual void \mbox{\hyperlink{class_pause_state_a8d34fffe9e80a299acfb06e00e442ff4}{Draw}} (ID3\+D12\+Graphics\+Command\+List $\ast$Cmd\+List, ID3\+D12\+Descriptor\+Heap $\ast$Desc, UINT Desc\+Size, struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$Frame, float Delta\+Time)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pause_state_a272418d33c78c729ce9d4251a378b57c}\label{class_pause_state_a272418d33c78c729ce9d4251a378b57c}} 
+\index{PauseState@{PauseState}!PauseState@{PauseState}}
+\index{PauseState@{PauseState}!PauseState@{PauseState}}
+\doxysubsubsection{\texorpdfstring{PauseState()}{PauseState()}}
+{\footnotesize\ttfamily Pause\+State\+::\+Pause\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_state_stack}{State\+Stack}} $\ast$}]{stack }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_pause_state_af5d47befed16ad991bd90f219d4985c7}\label{class_pause_state_af5d47befed16ad991bd90f219d4985c7}} 
+\index{PauseState@{PauseState}!````~PauseState@{$\sim$PauseState}}
+\index{````~PauseState@{$\sim$PauseState}!PauseState@{PauseState}}
+\doxysubsubsection{\texorpdfstring{$\sim$PauseState()}{~PauseState()}}
+{\footnotesize\ttfamily Pause\+State\+::$\sim$\+Pause\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pause_state_a8d34fffe9e80a299acfb06e00e442ff4}\label{class_pause_state_a8d34fffe9e80a299acfb06e00e442ff4}} 
+\index{PauseState@{PauseState}!Draw@{Draw}}
+\index{Draw@{Draw}!PauseState@{PauseState}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Pause\+State\+::\+Draw (\begin{DoxyParamCaption}\item[{ID3\+D12\+Graphics\+Command\+List $\ast$}]{Cmd\+List,  }\item[{ID3\+D12\+Descriptor\+Heap $\ast$}]{Desc,  }\item[{UINT}]{Desc\+Size,  }\item[{struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$}]{Frame,  }\item[{float}]{Delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_state_a94c3eab9c7618c3f0e23b12e881aa7a6}{State}}.
+
+\mbox{\Hypertarget{class_pause_state_a9a2e06a61e4a2afaaaffd9618079690f}\label{class_pause_state_a9a2e06a61e4a2afaaaffd9618079690f}} 
+\index{PauseState@{PauseState}!Init@{Init}}
+\index{Init@{Init}!PauseState@{PauseState}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Pause\+State\+::\+Init (\begin{DoxyParamCaption}\item[{ID3\+D12\+Device $\ast$}]{Device,  }\item[{ID3\+D12\+Graphics\+Command\+List $\ast$}]{Cmd\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_state_a1b43aa14bd269075f9ab929739ba53cf}{State}}.
+
+\mbox{\Hypertarget{class_pause_state_a2e3f69a4c530895bea1cfb1da4990d3e}\label{class_pause_state_a2e3f69a4c530895bea1cfb1da4990d3e}} 
+\index{PauseState@{PauseState}!ProcessInput@{ProcessInput}}
+\index{ProcessInput@{ProcessInput}!PauseState@{PauseState}}
+\doxysubsubsection{\texorpdfstring{ProcessInput()}{ProcessInput()}}
+{\footnotesize\ttfamily void Pause\+State\+::\+Process\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_state_aed5c7e2ef78f4c41ef0eb12c238e034e}{State}}.
+
+\mbox{\Hypertarget{class_pause_state_abac345e23a55340b3cae9495f3ccd1ad}\label{class_pause_state_abac345e23a55340b3cae9495f3ccd1ad}} 
+\index{PauseState@{PauseState}!Update@{Update}}
+\index{Update@{Update}!PauseState@{PauseState}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily bool Pause\+State\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time,  }\item[{struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$}]{Frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_state_a14fe60c9fa817ae1ed8fcbb81f37618f}{State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+GAME3015\+\_\+\+A3\+\_\+\+Phu\+Pham/\mbox{\hyperlink{_pause_state_8h}{Pause\+State.\+h}}\item 
+GAME3015\+\_\+\+A3\+\_\+\+Phu\+Pham/\mbox{\hyperlink{_pause_state_8cpp}{Pause\+State.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,37 @@
+\hypertarget{_command_queue_8h_source}{}\doxysection{Command\+Queue.\+h}
+\label{_command_queue_8h_source}\index{GAME3015\_A3\_PhuPham/CommandQueue.h@{GAME3015\_A3\_PhuPham/CommandQueue.h}}
+\mbox{\hyperlink{_command_queue_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_command_8h}{Command.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_game_info_8h}{GameInfo.h}}"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{class }\mbox{\hyperlink{class_command_queue}{CommandQueue}}}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8 \textcolor{keyword}{public}:}
+\DoxyCodeLine{9     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_command_queue_ad444e0d7af45d9e09b834f0cec1e1f43}{push}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_command}{Command}}\& command)}
+\DoxyCodeLine{10     \{}
+\DoxyCodeLine{11         mQueue.push(command);}
+\DoxyCodeLine{12     \}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14     \mbox{\hyperlink{class_command}{Command}} \mbox{\hyperlink{class_command_queue_ac2dde510222b8df393b55978f4594194}{pop}}()}
+\DoxyCodeLine{15     \{}
+\DoxyCodeLine{16         \mbox{\hyperlink{class_command}{Command}}  temp = mQueue.front();}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18         mQueue.pop();}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20         \textcolor{keywordflow}{return} temp;}
+\DoxyCodeLine{21     \}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_command_queue_a3a6eb6a7c83d9b20ad7a6cac63795ec1}{isEmpty}}()\textcolor{keyword}{   const}}
+\DoxyCodeLine{24 \textcolor{keyword}{    }\{}
+\DoxyCodeLine{25         \textcolor{keywordflow}{return} mQueue.empty();}
+\DoxyCodeLine{26     \}}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{keyword}{private}:}
+\DoxyCodeLine{29     std::queue<Command> mQueue;}
+\DoxyCodeLine{30 \};}
+\DoxyCodeLine{31 }
+
+\end{DoxyCode}

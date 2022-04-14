@@ -1,0 +1,152 @@
+\hypertarget{_scene_node_8h_source}{}\doxysection{Scene\+Node.\+h}
+\label{_scene_node_8h_source}\index{GAME3015\_A3\_PhuPham/SceneNode.h@{GAME3015\_A3\_PhuPham/SceneNode.h}}
+\mbox{\hyperlink{_scene_node_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_game_info_8h}{GameInfo.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_category_8h}{Category.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_command_8h}{Command.h}}"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{class_scene_node}{SceneNode}}}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9     \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{class_world}{World}};}
+\DoxyCodeLine{10     \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{class_game}{Game}};}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{public}:}
+\DoxyCodeLine{13     \mbox{\hyperlink{class_scene_node_acc2e7940323560ba86dad8e2d6eb6690}{SceneNode}}();}
+\DoxyCodeLine{14     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_scene_node_a11be58b869975806f2ff5a627770fa2e}{\string~SceneNode}}();}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{17     \mbox{\hyperlink{class_scene_node}{SceneNode}}* \mbox{\hyperlink{class_scene_node_a0900fe740317dd97de10421a5e62d9e5}{m\_Parent}};}
+\DoxyCodeLine{18     std::vector<SceneNode*> \mbox{\hyperlink{class_scene_node_adeb9932c84312711cb7d7ba70685c61d}{m\_ChildList}};}
+\DoxyCodeLine{19     XMFLOAT3        \mbox{\hyperlink{class_scene_node_aabaa9ead621fa1844d2f10ec943b1c03}{m\_Scale}};}
+\DoxyCodeLine{20     XMFLOAT3        \mbox{\hyperlink{class_scene_node_a65c407119966797cc8513b249206912e}{m\_Rot}};}
+\DoxyCodeLine{21     XMFLOAT3        \mbox{\hyperlink{class_scene_node_ae2447b583e0037a45bbd33e1f4f07500}{m\_Pos}};}
+\DoxyCodeLine{22     XMFLOAT4X4      \mbox{\hyperlink{class_scene_node_a103201cc39df413aa3816470dbeaed02}{m\_matWorld}};}
+\DoxyCodeLine{23     \textcolor{keywordtype}{int}         \mbox{\hyperlink{class_scene_node_ae71ced48f373f227baa40bb85f92e310}{m\_CBIndex}};}
+\DoxyCodeLine{24     \textcolor{keywordtype}{int}         \mbox{\hyperlink{class_scene_node_a3e4620c8169585fda39f232192afdfda}{m\_MBIndex}};}
+\DoxyCodeLine{25     \textcolor{keywordtype}{int}         \mbox{\hyperlink{class_scene_node_add46ebd17408bc1de1c6b2fff071ed87}{m\_TexIndex}};}
+\DoxyCodeLine{26     \textcolor{keywordtype}{bool}        \mbox{\hyperlink{class_scene_node_ae453944f73755e53d380c8fe620a3921}{m\_Render}};}
+\DoxyCodeLine{27     \mbox{\hyperlink{_category_8h_a9ca8f05608edcbf85ab6c2c85a439ccb}{Category}}    \mbox{\hyperlink{class_scene_node_a5c84d7f8865c9a650c1322d10a6e5c1e}{m\_Category}};}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 \textcolor{keyword}{public}:}
+\DoxyCodeLine{30     \textcolor{keyword}{static} \textcolor{keywordtype}{int}  \mbox{\hyperlink{class_scene_node_afb35484034ad91cbb9a35b4fcb4f785a}{m\_GlobalCBIndex}};}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{keyword}{public}:}
+\DoxyCodeLine{33     \mbox{\hyperlink{_category_8h_a9ca8f05608edcbf85ab6c2c85a439ccb}{Category}} \mbox{\hyperlink{class_scene_node_a2091ebc747cdbeb3c29a43ef800ed5ee}{GetCategory}}()\textcolor{keyword}{   const}}
+\DoxyCodeLine{34 \textcolor{keyword}{    }\{}
+\DoxyCodeLine{35         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_scene_node_a5c84d7f8865c9a650c1322d10a6e5c1e}{m\_Category}};}
+\DoxyCodeLine{36     \}}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_scene_node_aaf97b8e07346cc3db241726b2e8b192e}{SetCategory}}(\mbox{\hyperlink{_category_8h_a9ca8f05608edcbf85ab6c2c85a439ccb}{Category}} Type)}
+\DoxyCodeLine{39     \{}
+\DoxyCodeLine{40         \mbox{\hyperlink{class_scene_node_a5c84d7f8865c9a650c1322d10a6e5c1e}{m\_Category}} = Type;}
+\DoxyCodeLine{41     \}}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_scene_node_a70ac4cc49e8b654c1cfed634acfae37d}{GetTexIndex}}()\textcolor{keyword}{    const}}
+\DoxyCodeLine{44 \textcolor{keyword}{    }\{}
+\DoxyCodeLine{45         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_scene_node_add46ebd17408bc1de1c6b2fff071ed87}{m\_TexIndex}};}
+\DoxyCodeLine{46     \}}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_scene_node_a035b94aef8a6516f439f382a1b9a1574}{SetTexIndex}}(\textcolor{keywordtype}{int} Index)}
+\DoxyCodeLine{49     \{}
+\DoxyCodeLine{50         \mbox{\hyperlink{class_scene_node_add46ebd17408bc1de1c6b2fff071ed87}{m\_TexIndex}} = Index;}
+\DoxyCodeLine{51     \}}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_scene_node_a2dc32f32b3baf3b8bc03367fcb8a6f7f}{SetMBIndex}}(\textcolor{keywordtype}{int} Index)}
+\DoxyCodeLine{54     \{}
+\DoxyCodeLine{55         \mbox{\hyperlink{class_scene_node_a3e4620c8169585fda39f232192afdfda}{m\_MBIndex}} = Index;}
+\DoxyCodeLine{56     \}}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58 \textcolor{keyword}{public}:}
+\DoxyCodeLine{59     \textcolor{keyword}{const} XMFLOAT3\& \mbox{\hyperlink{class_scene_node_ad50a6e215bab80634b6766a9bcd8a34d}{GetScale}}()\textcolor{keyword}{  const}}
+\DoxyCodeLine{60 \textcolor{keyword}{    }\{}
+\DoxyCodeLine{61         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_scene_node_aabaa9ead621fa1844d2f10ec943b1c03}{m\_Scale}};}
+\DoxyCodeLine{62     \}}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64     \textcolor{keyword}{const} XMFLOAT3\& \mbox{\hyperlink{class_scene_node_a2c95ebec2b379f1ed03ad3ce17fde306}{GetRotation}}()\textcolor{keyword}{    const}}
+\DoxyCodeLine{65 \textcolor{keyword}{    }\{}
+\DoxyCodeLine{66         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_scene_node_a65c407119966797cc8513b249206912e}{m\_Rot}};}
+\DoxyCodeLine{67     \}}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69     \textcolor{keyword}{const} XMFLOAT3\& \mbox{\hyperlink{class_scene_node_aaebde8683ff39183ec3aaddd261379de}{GetPos}}()\textcolor{keyword}{  const}}
+\DoxyCodeLine{70 \textcolor{keyword}{    }\{}
+\DoxyCodeLine{71         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_scene_node_ae2447b583e0037a45bbd33e1f4f07500}{m\_Pos}};}
+\DoxyCodeLine{72     \}}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74 \textcolor{keyword}{public}:}
+\DoxyCodeLine{75     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_scene_node_aa28ef534fac93d583388e61e26d863b9}{SetScale}}(\textcolor{keyword}{const} XMFLOAT3\& Scale)}
+\DoxyCodeLine{76     \{}
+\DoxyCodeLine{77         \mbox{\hyperlink{class_scene_node_aabaa9ead621fa1844d2f10ec943b1c03}{m\_Scale}} = Scale;}
+\DoxyCodeLine{78     \}}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_scene_node_a8b3f450fde826723e0e0c66c9fe77d68}{SetScale}}(\textcolor{keywordtype}{float} x, \textcolor{keywordtype}{float} y, \textcolor{keywordtype}{float} z)}
+\DoxyCodeLine{81     \{}
+\DoxyCodeLine{82         \mbox{\hyperlink{class_scene_node_aabaa9ead621fa1844d2f10ec943b1c03}{m\_Scale}} = XMFLOAT3(x, y, z);}
+\DoxyCodeLine{83     \}}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_scene_node_a49da44a1fd578be7df15556db6919914}{SetRot}}(\textcolor{keyword}{const} XMFLOAT3\& Rot)}
+\DoxyCodeLine{86     \{}
+\DoxyCodeLine{87         \mbox{\hyperlink{class_scene_node_a65c407119966797cc8513b249206912e}{m\_Rot}} = Rot;}
+\DoxyCodeLine{88     \}}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_scene_node_a155eb0db136f6544230d97b75c918e5d}{SetRot}}(\textcolor{keywordtype}{float} x, \textcolor{keywordtype}{float} y, \textcolor{keywordtype}{float} z)}
+\DoxyCodeLine{91     \{}
+\DoxyCodeLine{92         \mbox{\hyperlink{class_scene_node_a65c407119966797cc8513b249206912e}{m\_Rot}} = XMFLOAT3(x, y, z);}
+\DoxyCodeLine{93     \}}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_scene_node_a1eb858b9d59424bc2931ee3c5233ef13}{SetPos}}(\textcolor{keyword}{const} XMFLOAT3\& Pos)}
+\DoxyCodeLine{96     \{}
+\DoxyCodeLine{97         \mbox{\hyperlink{class_scene_node_ae2447b583e0037a45bbd33e1f4f07500}{m\_Pos}} = Pos;}
+\DoxyCodeLine{98     \}}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_scene_node_a3c7854295ac230b90f80e192644c4ca3}{SetPos}}(\textcolor{keywordtype}{float} x, \textcolor{keywordtype}{float} y, \textcolor{keywordtype}{float} z)}
+\DoxyCodeLine{101     \{}
+\DoxyCodeLine{102         \mbox{\hyperlink{class_scene_node_ae2447b583e0037a45bbd33e1f4f07500}{m\_Pos}} = XMFLOAT3(x, y, z);}
+\DoxyCodeLine{103     \}}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_scene_node_a045a6f9956aad4ac6c60bfd8dab79c5b}{Move}}(\textcolor{keyword}{const} XMFLOAT3\& \mbox{\hyperlink{class_scene_node_a045a6f9956aad4ac6c60bfd8dab79c5b}{Move}})}
+\DoxyCodeLine{106     \{}
+\DoxyCodeLine{107         \mbox{\hyperlink{class_scene_node_ae2447b583e0037a45bbd33e1f4f07500}{m\_Pos}}.x += \mbox{\hyperlink{class_scene_node_a045a6f9956aad4ac6c60bfd8dab79c5b}{Move}}.x;}
+\DoxyCodeLine{108         \mbox{\hyperlink{class_scene_node_ae2447b583e0037a45bbd33e1f4f07500}{m\_Pos}}.y += \mbox{\hyperlink{class_scene_node_a045a6f9956aad4ac6c60bfd8dab79c5b}{Move}}.y;}
+\DoxyCodeLine{109         \mbox{\hyperlink{class_scene_node_ae2447b583e0037a45bbd33e1f4f07500}{m\_Pos}}.z += \mbox{\hyperlink{class_scene_node_a045a6f9956aad4ac6c60bfd8dab79c5b}{Move}}.z;}
+\DoxyCodeLine{110     \}}
+\DoxyCodeLine{111 }
+\DoxyCodeLine{112     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_scene_node_a272ad455fd176527733f7ed4c8202079}{Move}}(\textcolor{keywordtype}{float} x, \textcolor{keywordtype}{float} y, \textcolor{keywordtype}{float} z)}
+\DoxyCodeLine{113     \{}
+\DoxyCodeLine{114         \mbox{\hyperlink{class_scene_node_ae2447b583e0037a45bbd33e1f4f07500}{m\_Pos}}.x += x;}
+\DoxyCodeLine{115         \mbox{\hyperlink{class_scene_node_ae2447b583e0037a45bbd33e1f4f07500}{m\_Pos}}.y += y;}
+\DoxyCodeLine{116         \mbox{\hyperlink{class_scene_node_ae2447b583e0037a45bbd33e1f4f07500}{m\_Pos}}.z += z;}
+\DoxyCodeLine{117     \}}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_scene_node_a0834df5618d4783af5f28e8df3c96e5d}{Move}}(\textcolor{keyword}{const} XMFLOAT3\& Dir, \textcolor{keywordtype}{float} Speed, \textcolor{keywordtype}{float} DeltaTime)}
+\DoxyCodeLine{120     \{}
+\DoxyCodeLine{121         \mbox{\hyperlink{class_scene_node_ae2447b583e0037a45bbd33e1f4f07500}{m\_Pos}}.x += Dir.x * Speed * DeltaTime;}
+\DoxyCodeLine{122         \mbox{\hyperlink{class_scene_node_ae2447b583e0037a45bbd33e1f4f07500}{m\_Pos}}.y += Dir.y * Speed * DeltaTime;}
+\DoxyCodeLine{123         \mbox{\hyperlink{class_scene_node_ae2447b583e0037a45bbd33e1f4f07500}{m\_Pos}}.z += Dir.z * Speed * DeltaTime;}
+\DoxyCodeLine{124     \}}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_scene_node_a932462d9a032022d28d27ef65764923b}{Move}}(\textcolor{keyword}{const} XMFLOAT3\& Velocity, \textcolor{keywordtype}{float} DeltaTime)}
+\DoxyCodeLine{127     \{}
+\DoxyCodeLine{128         \mbox{\hyperlink{class_scene_node_ae2447b583e0037a45bbd33e1f4f07500}{m\_Pos}}.x += Velocity.x * DeltaTime;}
+\DoxyCodeLine{129         \mbox{\hyperlink{class_scene_node_ae2447b583e0037a45bbd33e1f4f07500}{m\_Pos}}.y += Velocity.y * DeltaTime;}
+\DoxyCodeLine{130         \mbox{\hyperlink{class_scene_node_ae2447b583e0037a45bbd33e1f4f07500}{m\_Pos}}.z += Velocity.z * DeltaTime;}
+\DoxyCodeLine{131     \}}
+\DoxyCodeLine{132 }
+\DoxyCodeLine{133 \textcolor{keyword}{public}:}
+\DoxyCodeLine{134     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_scene_node_a0c5275e2cbbe05d7096cd41ecc9f2082}{AddChild}}(\mbox{\hyperlink{class_scene_node}{SceneNode}}* Child);}
+\DoxyCodeLine{135 }
+\DoxyCodeLine{136 \textcolor{keyword}{public}:}
+\DoxyCodeLine{137     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_scene_node_af718e350308b297e132b0d6201345b02}{OnCommand}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_command}{Command}}\& Cmd, \textcolor{keywordtype}{float} DeltaTime);}
+\DoxyCodeLine{138     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_scene_node_aa801e799edb585d7e371ffacf4786f94}{Update}}(\textcolor{keywordtype}{float} DeltaTime, \textcolor{keyword}{struct} \mbox{\hyperlink{struct_frame_resource}{FrameResource}}* Frame);}
+\DoxyCodeLine{139     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_scene_node_aad909ab9c606f4de006910b3586b9830}{Draw}}(ID3D12GraphicsCommandList* CmdList, ID3D12DescriptorHeap* Desc,}
+\DoxyCodeLine{140         UINT DescSize, \textcolor{keyword}{struct} \mbox{\hyperlink{struct_frame_resource}{FrameResource}}* Frame, }
+\DoxyCodeLine{141         \mbox{\hyperlink{struct_mesh_geometry}{MeshGeometry}}* Mesh, \textcolor{keywordtype}{float} DeltaTime);}
+\DoxyCodeLine{142 }
+\DoxyCodeLine{143 \textcolor{keyword}{private}:}
+\DoxyCodeLine{144     \textcolor{keywordtype}{void} UpdateChild(\textcolor{keywordtype}{float} DeltaTime, \textcolor{keyword}{struct} \mbox{\hyperlink{struct_frame_resource}{FrameResource}}* Frame);}
+\DoxyCodeLine{145 \};}
+\DoxyCodeLine{146 }
+
+\end{DoxyCode}

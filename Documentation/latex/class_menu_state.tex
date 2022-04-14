@@ -1,0 +1,92 @@
+\hypertarget{class_menu_state}{}\doxysection{Menu\+State Class Reference}
+\label{class_menu_state}\index{MenuState@{MenuState}}
+
+
+{\ttfamily \#include $<$Menu\+State.\+h$>$}
+
+Inheritance diagram for Menu\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_menu_state}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_menu_state_ae98a008aeb8b9bc8c79f475bd85153b9}{Menu\+State}} (\mbox{\hyperlink{class_state_stack}{State\+Stack}} $\ast$stack)
+\item 
+virtual \mbox{\hyperlink{class_menu_state_a58aea91a44436c5bba575c5de755a5bc}{$\sim$\+Menu\+State}} ()
+\item 
+virtual void \mbox{\hyperlink{class_menu_state_a52e464bad34b388a936de0d4f9374c24}{Process\+Input}} ()
+\item 
+virtual void \mbox{\hyperlink{class_menu_state_ac566c5c8e833fc4f7b71d65254057716}{Init}} (ID3\+D12\+Device $\ast$Device, ID3\+D12\+Graphics\+Command\+List $\ast$Cmd\+List)
+\item 
+virtual bool \mbox{\hyperlink{class_menu_state_a4f44397d193fa29e56bdd48881d39092}{Update}} (float Delta\+Time, struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$Frame)
+\item 
+virtual void \mbox{\hyperlink{class_menu_state_acdb1a16929c72514247473b6fa843908}{Draw}} (ID3\+D12\+Graphics\+Command\+List $\ast$Cmd\+List, ID3\+D12\+Descriptor\+Heap $\ast$Desc, UINT Desc\+Size, struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$Frame, float Delta\+Time)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_menu_state_ae98a008aeb8b9bc8c79f475bd85153b9}\label{class_menu_state_ae98a008aeb8b9bc8c79f475bd85153b9}} 
+\index{MenuState@{MenuState}!MenuState@{MenuState}}
+\index{MenuState@{MenuState}!MenuState@{MenuState}}
+\doxysubsubsection{\texorpdfstring{MenuState()}{MenuState()}}
+{\footnotesize\ttfamily Menu\+State\+::\+Menu\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_state_stack}{State\+Stack}} $\ast$}]{stack }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_menu_state_a58aea91a44436c5bba575c5de755a5bc}\label{class_menu_state_a58aea91a44436c5bba575c5de755a5bc}} 
+\index{MenuState@{MenuState}!````~MenuState@{$\sim$MenuState}}
+\index{````~MenuState@{$\sim$MenuState}!MenuState@{MenuState}}
+\doxysubsubsection{\texorpdfstring{$\sim$MenuState()}{~MenuState()}}
+{\footnotesize\ttfamily Menu\+State\+::$\sim$\+Menu\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_menu_state_acdb1a16929c72514247473b6fa843908}\label{class_menu_state_acdb1a16929c72514247473b6fa843908}} 
+\index{MenuState@{MenuState}!Draw@{Draw}}
+\index{Draw@{Draw}!MenuState@{MenuState}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Menu\+State\+::\+Draw (\begin{DoxyParamCaption}\item[{ID3\+D12\+Graphics\+Command\+List $\ast$}]{Cmd\+List,  }\item[{ID3\+D12\+Descriptor\+Heap $\ast$}]{Desc,  }\item[{UINT}]{Desc\+Size,  }\item[{struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$}]{Frame,  }\item[{float}]{Delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_state_a94c3eab9c7618c3f0e23b12e881aa7a6}{State}}.
+
+\mbox{\Hypertarget{class_menu_state_ac566c5c8e833fc4f7b71d65254057716}\label{class_menu_state_ac566c5c8e833fc4f7b71d65254057716}} 
+\index{MenuState@{MenuState}!Init@{Init}}
+\index{Init@{Init}!MenuState@{MenuState}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Menu\+State\+::\+Init (\begin{DoxyParamCaption}\item[{ID3\+D12\+Device $\ast$}]{Device,  }\item[{ID3\+D12\+Graphics\+Command\+List $\ast$}]{Cmd\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_state_a1b43aa14bd269075f9ab929739ba53cf}{State}}.
+
+\mbox{\Hypertarget{class_menu_state_a52e464bad34b388a936de0d4f9374c24}\label{class_menu_state_a52e464bad34b388a936de0d4f9374c24}} 
+\index{MenuState@{MenuState}!ProcessInput@{ProcessInput}}
+\index{ProcessInput@{ProcessInput}!MenuState@{MenuState}}
+\doxysubsubsection{\texorpdfstring{ProcessInput()}{ProcessInput()}}
+{\footnotesize\ttfamily void Menu\+State\+::\+Process\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_state_aed5c7e2ef78f4c41ef0eb12c238e034e}{State}}.
+
+\mbox{\Hypertarget{class_menu_state_a4f44397d193fa29e56bdd48881d39092}\label{class_menu_state_a4f44397d193fa29e56bdd48881d39092}} 
+\index{MenuState@{MenuState}!Update@{Update}}
+\index{Update@{Update}!MenuState@{MenuState}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily bool Menu\+State\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time,  }\item[{struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$}]{Frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_state_a14fe60c9fa817ae1ed8fcbb81f37618f}{State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+GAME3015\+\_\+\+A3\+\_\+\+Phu\+Pham/\mbox{\hyperlink{_menu_state_8h}{Menu\+State.\+h}}\item 
+GAME3015\+\_\+\+A3\+\_\+\+Phu\+Pham/\mbox{\hyperlink{_menu_state_8cpp}{Menu\+State.\+cpp}}\end{DoxyCompactItemize}

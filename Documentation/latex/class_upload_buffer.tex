@@ -1,0 +1,74 @@
+\hypertarget{class_upload_buffer}{}\doxysection{Upload\+Buffer\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\label{class_upload_buffer}\index{UploadBuffer$<$ T $>$@{UploadBuffer$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Upload\+Buffer.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_upload_buffer_a622fad9645e52e4d6074a2e533165855}{Upload\+Buffer}} (ID3\+D12\+Device $\ast$device, UINT element\+Count, bool is\+Constant\+Buffer)
+\item 
+\mbox{\hyperlink{class_upload_buffer_aa6d59b50f752d27d3d13cc40fe34db85}{Upload\+Buffer}} (const \mbox{\hyperlink{class_upload_buffer}{Upload\+Buffer}} \&rhs)=delete
+\item 
+\mbox{\hyperlink{class_upload_buffer}{Upload\+Buffer}} \& \mbox{\hyperlink{class_upload_buffer_a279ae8958cebcdb24f5e167a675ad9ce}{operator=}} (const \mbox{\hyperlink{class_upload_buffer}{Upload\+Buffer}} \&rhs)=delete
+\item 
+\mbox{\hyperlink{class_upload_buffer_a0e530159492ad21fe575ce0f43e9ebe7}{$\sim$\+Upload\+Buffer}} ()
+\item 
+ID3\+D12\+Resource $\ast$ \mbox{\hyperlink{class_upload_buffer_a54b62594f77aed67c502512053addf1f}{Resource}} () const
+\item 
+void \mbox{\hyperlink{class_upload_buffer_a4d9230e295202629d9988c82cd0e78b2}{Copy\+Data}} (int element\+Index, const T \&data)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_upload_buffer_a622fad9645e52e4d6074a2e533165855}\label{class_upload_buffer_a622fad9645e52e4d6074a2e533165855}} 
+\index{UploadBuffer$<$ T $>$@{UploadBuffer$<$ T $>$}!UploadBuffer@{UploadBuffer}}
+\index{UploadBuffer@{UploadBuffer}!UploadBuffer$<$ T $>$@{UploadBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{UploadBuffer()}{UploadBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_upload_buffer}{Upload\+Buffer}}$<$ T $>$\mbox{\hyperlink{class_upload_buffer}{\+::\+Upload\+Buffer}} (\begin{DoxyParamCaption}\item[{ID3\+D12\+Device $\ast$}]{device,  }\item[{UINT}]{element\+Count,  }\item[{bool}]{is\+Constant\+Buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_upload_buffer_aa6d59b50f752d27d3d13cc40fe34db85}\label{class_upload_buffer_aa6d59b50f752d27d3d13cc40fe34db85}} 
+\index{UploadBuffer$<$ T $>$@{UploadBuffer$<$ T $>$}!UploadBuffer@{UploadBuffer}}
+\index{UploadBuffer@{UploadBuffer}!UploadBuffer$<$ T $>$@{UploadBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{UploadBuffer()}{UploadBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_upload_buffer}{Upload\+Buffer}}$<$ T $>$\mbox{\hyperlink{class_upload_buffer}{\+::\+Upload\+Buffer}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_upload_buffer}{Upload\+Buffer}}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_upload_buffer_a0e530159492ad21fe575ce0f43e9ebe7}\label{class_upload_buffer_a0e530159492ad21fe575ce0f43e9ebe7}} 
+\index{UploadBuffer$<$ T $>$@{UploadBuffer$<$ T $>$}!````~UploadBuffer@{$\sim$UploadBuffer}}
+\index{````~UploadBuffer@{$\sim$UploadBuffer}!UploadBuffer$<$ T $>$@{UploadBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$UploadBuffer()}{~UploadBuffer()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_upload_buffer}{Upload\+Buffer}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{class_upload_buffer}{Upload\+Buffer}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_upload_buffer_a4d9230e295202629d9988c82cd0e78b2}\label{class_upload_buffer_a4d9230e295202629d9988c82cd0e78b2}} 
+\index{UploadBuffer$<$ T $>$@{UploadBuffer$<$ T $>$}!CopyData@{CopyData}}
+\index{CopyData@{CopyData}!UploadBuffer$<$ T $>$@{UploadBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CopyData()}{CopyData()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_upload_buffer}{Upload\+Buffer}}$<$ T $>$\+::\+Copy\+Data (\begin{DoxyParamCaption}\item[{int}]{element\+Index,  }\item[{const T \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_upload_buffer_a279ae8958cebcdb24f5e167a675ad9ce}\label{class_upload_buffer_a279ae8958cebcdb24f5e167a675ad9ce}} 
+\index{UploadBuffer$<$ T $>$@{UploadBuffer$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!UploadBuffer$<$ T $>$@{UploadBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_upload_buffer}{Upload\+Buffer}} \& \mbox{\hyperlink{class_upload_buffer}{Upload\+Buffer}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_upload_buffer}{Upload\+Buffer}}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_upload_buffer_a54b62594f77aed67c502512053addf1f}\label{class_upload_buffer_a54b62594f77aed67c502512053addf1f}} 
+\index{UploadBuffer$<$ T $>$@{UploadBuffer$<$ T $>$}!Resource@{Resource}}
+\index{Resource@{Resource}!UploadBuffer$<$ T $>$@{UploadBuffer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Resource()}{Resource()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+ID3\+D12\+Resource $\ast$ \mbox{\hyperlink{class_upload_buffer}{Upload\+Buffer}}$<$ T $>$\+::\+Resource (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+GAME3015\+\_\+\+A3\+\_\+\+Phu\+Pham/\+Common/\mbox{\hyperlink{_upload_buffer_8h}{Upload\+Buffer.\+h}}\end{DoxyCompactItemize}

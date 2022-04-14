@@ -1,0 +1,137 @@
+\hypertarget{class_player}{}\doxysection{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+
+
+\mbox{\hyperlink{class_player}{Player}} character that will be controllable by the user.  
+
+
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
+Inheritance diagram for Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_player}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{Player}} ()
+\begin{DoxyCompactList}\small\item\em On construction, create the key bindings as well. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player_a749d2c00e1fe0f5c2746f7505a58c062}{$\sim$\+Player}} ()
+\item 
+void \mbox{\hyperlink{class_player_aca9b612be8a0496a923c008cf18c0802}{Assign\+Key}} (\mbox{\hyperlink{_game_info_8h_a8bb1ef53467e4f61410d12822d922498}{Action}} action, unsigned char Key)
+\item 
+virtual void \mbox{\hyperlink{class_player_a7b8ee868edd6de769ec57985b19a04d5}{Update}} (float Delta\+Time, struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$Frame)
+\begin{DoxyCompactList}\small\item\em Function to be called every frame to update the player \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_player_ae5251180c77c2b6fac97f2684d8b102e}{Draw}} (ID3\+D12\+Graphics\+Command\+List $\ast$Cmd\+List, ID3\+D12\+Descriptor\+Heap $\ast$Desc, UINT Desc\+Size, struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$Frame, \mbox{\hyperlink{struct_mesh_geometry}{Mesh\+Geometry}} $\ast$Mesh, float Delta\+Time)
+\begin{DoxyCompactList}\small\item\em Function called after update to render the player into the game \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_aadf1649f15bc76f1452cd8fda103e003}{Handle\+Event}} (\mbox{\hyperlink{class_command_queue}{Command\+Queue}} \&Queue)
+\item 
+void \mbox{\hyperlink{class_player_adbe714d7a5f02a5ff4e21829e27662e7}{Handle\+Realtime\+Input}} (\mbox{\hyperlink{class_command_queue}{Command\+Queue}} \&Queue)
+\begin{DoxyCompactList}\small\item\em Moves the player aircraft based on key inputs from player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_player}{Player}} character that will be controllable by the user. 
+
+Currently, inputs are in progress 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}\label{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+On construction, create the key bindings as well. 
+
+\mbox{\Hypertarget{class_player_a749d2c00e1fe0f5c2746f7505a58c062}\label{class_player_a749d2c00e1fe0f5c2746f7505a58c062}} 
+\index{Player@{Player}!````~Player@{$\sim$Player}}
+\index{````~Player@{$\sim$Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{$\sim$Player()}{~Player()}}
+{\footnotesize\ttfamily Player\+::$\sim$\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_aca9b612be8a0496a923c008cf18c0802}\label{class_player_aca9b612be8a0496a923c008cf18c0802}} 
+\index{Player@{Player}!AssignKey@{AssignKey}}
+\index{AssignKey@{AssignKey}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{AssignKey()}{AssignKey()}}
+{\footnotesize\ttfamily void Player\+::\+Assign\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_game_info_8h_a8bb1ef53467e4f61410d12822d922498}{Action}}}]{action,  }\item[{unsigned char}]{Key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_player_ae5251180c77c2b6fac97f2684d8b102e}\label{class_player_ae5251180c77c2b6fac97f2684d8b102e}} 
+\index{Player@{Player}!Draw@{Draw}}
+\index{Draw@{Draw}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Player\+::\+Draw (\begin{DoxyParamCaption}\item[{ID3\+D12\+Graphics\+Command\+List $\ast$}]{Cmd\+List,  }\item[{ID3\+D12\+Descriptor\+Heap $\ast$}]{Desc,  }\item[{UINT}]{Desc\+Size,  }\item[{struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$}]{Frame,  }\item[{\mbox{\hyperlink{struct_mesh_geometry}{Mesh\+Geometry}} $\ast$}]{Mesh,  }\item[{float}]{Delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Function called after update to render the player into the game 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Cmd\+List} & \\
+\hline
+{\em Delta\+Time} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_entity_a1b58246ff050872e0c11ac8682db6aae}{Entity}}.
+
+\mbox{\Hypertarget{class_player_aadf1649f15bc76f1452cd8fda103e003}\label{class_player_aadf1649f15bc76f1452cd8fda103e003}} 
+\index{Player@{Player}!HandleEvent@{HandleEvent}}
+\index{HandleEvent@{HandleEvent}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{HandleEvent()}{HandleEvent()}}
+{\footnotesize\ttfamily void Player\+::\+Handle\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_command_queue}{Command\+Queue}} \&}]{Queue }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_player_adbe714d7a5f02a5ff4e21829e27662e7}\label{class_player_adbe714d7a5f02a5ff4e21829e27662e7}} 
+\index{Player@{Player}!HandleRealtimeInput@{HandleRealtimeInput}}
+\index{HandleRealtimeInput@{HandleRealtimeInput}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{HandleRealtimeInput()}{HandleRealtimeInput()}}
+{\footnotesize\ttfamily void Player\+::\+Handle\+Realtime\+Input (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_command_queue}{Command\+Queue}} \&}]{Queue }\end{DoxyParamCaption})}
+
+
+
+Moves the player aircraft based on key inputs from player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Queue} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_a7b8ee868edd6de769ec57985b19a04d5}\label{class_player_a7b8ee868edd6de769ec57985b19a04d5}} 
+\index{Player@{Player}!Update@{Update}}
+\index{Update@{Update}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Player\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time,  }\item[{struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$}]{Frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Function to be called every frame to update the player 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Delta\+Time} & \\
+\hline
+{\em Frame} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_entity_ac4025ea862585a94f6e27cecfae9423e}{Entity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+GAME3015\+\_\+\+A3\+\_\+\+Phu\+Pham/\mbox{\hyperlink{_player_8h}{Player.\+h}}\item 
+GAME3015\+\_\+\+A3\+\_\+\+Phu\+Pham/\mbox{\hyperlink{_player_8cpp}{Player.\+cpp}}\end{DoxyCompactItemize}

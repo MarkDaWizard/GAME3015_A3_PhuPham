@@ -1,0 +1,87 @@
+\hypertarget{_frame_resource_8h_source}{}\doxysection{Frame\+Resource.\+h}
+\label{_frame_resource_8h_source}\index{GAME3015\_A3\_PhuPham/FrameResource.h@{GAME3015\_A3\_PhuPham/FrameResource.h}}
+\mbox{\hyperlink{_frame_resource_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{d3d_util_8h}{Common/d3dUtil.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_math_helper_8h}{Common/MathHelper.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_upload_buffer_8h}{Common/UploadBuffer.h}}"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_object_constants}{ObjectConstants}}}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9     DirectX::XMFLOAT4X4 \mbox{\hyperlink{class_world}{World}} = \mbox{\hyperlink{class_math_helper_a68b4e9af95b1a36aad30ea80839f6b19}{MathHelper::Identity4x4}}();}
+\DoxyCodeLine{10     DirectX::XMFLOAT4X4 \mbox{\hyperlink{struct_object_constants_a0a7f8e4817a18595707569b307060a42}{TexTransform}} = \mbox{\hyperlink{class_math_helper_a68b4e9af95b1a36aad30ea80839f6b19}{MathHelper::Identity4x4}}();}
+\DoxyCodeLine{11 \};}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_pass_constants}{PassConstants}}}
+\DoxyCodeLine{14 \{}
+\DoxyCodeLine{15     DirectX::XMFLOAT4X4 \mbox{\hyperlink{struct_pass_constants_a31fec7617b89727cc44c9802c57bb57a}{View}} = \mbox{\hyperlink{class_math_helper_a68b4e9af95b1a36aad30ea80839f6b19}{MathHelper::Identity4x4}}();}
+\DoxyCodeLine{16     DirectX::XMFLOAT4X4 \mbox{\hyperlink{struct_pass_constants_a4c0b015fa6bc9623ccfa4be6a16a4da9}{InvView}} = \mbox{\hyperlink{class_math_helper_a68b4e9af95b1a36aad30ea80839f6b19}{MathHelper::Identity4x4}}();}
+\DoxyCodeLine{17     DirectX::XMFLOAT4X4 \mbox{\hyperlink{struct_pass_constants_a8af99b882f26e3507717dacc0c957521}{Proj}} = \mbox{\hyperlink{class_math_helper_a68b4e9af95b1a36aad30ea80839f6b19}{MathHelper::Identity4x4}}();}
+\DoxyCodeLine{18     DirectX::XMFLOAT4X4 \mbox{\hyperlink{struct_pass_constants_a9a1ac0a0421d54bf40c9749ec1d1537c}{InvProj}} = \mbox{\hyperlink{class_math_helper_a68b4e9af95b1a36aad30ea80839f6b19}{MathHelper::Identity4x4}}();}
+\DoxyCodeLine{19     DirectX::XMFLOAT4X4 \mbox{\hyperlink{struct_pass_constants_aa44b7dd1a9692065876bd8d2d6efb76c}{ViewProj}} = \mbox{\hyperlink{class_math_helper_a68b4e9af95b1a36aad30ea80839f6b19}{MathHelper::Identity4x4}}();}
+\DoxyCodeLine{20     DirectX::XMFLOAT4X4 \mbox{\hyperlink{struct_pass_constants_a54f008edf338ad532633c2bb797fca88}{InvViewProj}} = \mbox{\hyperlink{class_math_helper_a68b4e9af95b1a36aad30ea80839f6b19}{MathHelper::Identity4x4}}();}
+\DoxyCodeLine{21     DirectX::XMFLOAT3 \mbox{\hyperlink{struct_pass_constants_aa902cc9c84da7a58dd0302624e58bfc3}{EyePosW}} = \{ 0.0f, 0.0f, 0.0f \};}
+\DoxyCodeLine{22     \textcolor{keywordtype}{float} \mbox{\hyperlink{struct_pass_constants_aaae2d67cebf30e767a800a1e508e249a}{cbPerObjectPad1}} = 0.0f;}
+\DoxyCodeLine{23     DirectX::XMFLOAT2 \mbox{\hyperlink{struct_pass_constants_aca6c8d20f6c92f8a117ef21bd7666687}{RenderTargetSize}} = \{ 0.0f, 0.0f \};}
+\DoxyCodeLine{24     DirectX::XMFLOAT2 \mbox{\hyperlink{struct_pass_constants_af25015138bf3b92384560ec1eed1e6aa}{InvRenderTargetSize}} = \{ 0.0f, 0.0f \};}
+\DoxyCodeLine{25     \textcolor{keywordtype}{float} \mbox{\hyperlink{struct_pass_constants_affe3124795eccdba77dae8cef5399e7d}{NearZ}} = 0.0f;}
+\DoxyCodeLine{26     \textcolor{keywordtype}{float} \mbox{\hyperlink{struct_pass_constants_acff44014fa749b6cc636c0ed3516bab7}{FarZ}} = 0.0f;}
+\DoxyCodeLine{27     \textcolor{keywordtype}{float} \mbox{\hyperlink{struct_pass_constants_a8b7dc8578d216518bff83264bc85d34c}{TotalTime}} = 0.0f;}
+\DoxyCodeLine{28     \textcolor{keywordtype}{float} \mbox{\hyperlink{struct_pass_constants_afd52d73d793299a6ad6a68bc137bd841}{DeltaTime}} = 0.0f;}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     DirectX::XMFLOAT4 \mbox{\hyperlink{struct_pass_constants_a23503802ae007eb1b745843257371878}{AmbientLight}} = \{ 0.0f, 0.0f, 0.0f, 1.0f \};}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32     DirectX::XMFLOAT4 \mbox{\hyperlink{struct_pass_constants_ae11238594ce3968e848ce2ad8cf9fd03}{FogColor}} = \{ 0.0f, 0.0f, 0.0f, 1.0f \};}
+\DoxyCodeLine{33     \textcolor{keywordtype}{float} \mbox{\hyperlink{struct_pass_constants_a9ffae9d149bcaaf5ec87517a629835b3}{gFogStart}} = 5.0f;}
+\DoxyCodeLine{34     \textcolor{keywordtype}{float} \mbox{\hyperlink{struct_pass_constants_a6ee41a165635f8f826a29f84f546e0bb}{gFogRange}} = 150.0f;}
+\DoxyCodeLine{35     DirectX::XMFLOAT2 \mbox{\hyperlink{struct_pass_constants_a617fb5be6baaf150a132c9ea0396abfa}{cbPerObjectPad2}};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37     \textcolor{comment}{// Indices [0, NUM\_DIR\_LIGHTS) are directional lights;}}
+\DoxyCodeLine{38     \textcolor{comment}{// indices [NUM\_DIR\_LIGHTS, NUM\_DIR\_LIGHTS+NUM\_POINT\_LIGHTS) are point lights;}}
+\DoxyCodeLine{39     \textcolor{comment}{// indices [NUM\_DIR\_LIGHTS+NUM\_POINT\_LIGHTS, NUM\_DIR\_LIGHTS+NUM\_POINT\_LIGHT+NUM\_SPOT\_LIGHTS)}}
+\DoxyCodeLine{40     \textcolor{comment}{// are spot lights for a maximum of MaxLights per object.}}
+\DoxyCodeLine{41     \mbox{\hyperlink{struct_light}{Light}} \mbox{\hyperlink{struct_pass_constants_ab8ff697b065ed13983d022e44e09f35f}{Lights}}[\mbox{\hyperlink{d3d_util_8h_a3654e541e465ac5978e40d2fc5e7fdfa}{MaxLights}}];}
+\DoxyCodeLine{42 \};}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_vertex}{Vertex}}}
+\DoxyCodeLine{45 \{}
+\DoxyCodeLine{46     DirectX::XMFLOAT3 \mbox{\hyperlink{struct_vertex_af07583772f2c7eee146e655826467dcb}{Pos}};}
+\DoxyCodeLine{47     DirectX::XMFLOAT3 \mbox{\hyperlink{struct_vertex_a553ed48ae98dda36da8e57cfa53877d4}{Normal}};}
+\DoxyCodeLine{48     DirectX::XMFLOAT2 \mbox{\hyperlink{struct_vertex_a43e8c374e56c6ed3acc708ba2de1c70c}{TexC}};}
+\DoxyCodeLine{49 \};}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \textcolor{comment}{// Stores the resources needed for the CPU to build the command lists}}
+\DoxyCodeLine{52 \textcolor{comment}{// for a frame.  }}
+\DoxyCodeLine{53 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_frame_resource}{FrameResource}}}
+\DoxyCodeLine{54 \{}
+\DoxyCodeLine{55 \textcolor{keyword}{public}:}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57     \mbox{\hyperlink{struct_frame_resource_abee2ad23c6f03da417e2bcb102312ba8}{FrameResource}}(ID3D12Device* device, UINT passCount, UINT objectCount, UINT materialCount, UINT waveVertCount);}
+\DoxyCodeLine{58     \mbox{\hyperlink{struct_frame_resource_abee2ad23c6f03da417e2bcb102312ba8}{FrameResource}}(ID3D12Device* device, UINT passCount, UINT objectCount, UINT materialCount);}
+\DoxyCodeLine{59     \mbox{\hyperlink{struct_frame_resource_a847d99ad6c492fd988ab52623e56aed5}{FrameResource}}(\textcolor{keyword}{const} \mbox{\hyperlink{struct_frame_resource}{FrameResource}}\& rhs) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{60     \mbox{\hyperlink{struct_frame_resource}{FrameResource}}\& \mbox{\hyperlink{struct_frame_resource_a4d75d2a5a7bca5a0bd70a15b449c5776}{operator=}}(\textcolor{keyword}{const} \mbox{\hyperlink{struct_frame_resource}{FrameResource}}\& rhs) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{61     \mbox{\hyperlink{struct_frame_resource_a93d669d1d4db3b4ed5cd6f0f6b921809}{\string~FrameResource}}();}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63     \textcolor{comment}{// We cannot reset the allocator until the GPU is done processing the commands.}}
+\DoxyCodeLine{64     \textcolor{comment}{// So each frame needs their own allocator.}}
+\DoxyCodeLine{65     Microsoft::WRL::ComPtr<ID3D12CommandAllocator> \mbox{\hyperlink{struct_frame_resource_a2c0624d447e7fe7697b37a91275066d1}{CmdListAlloc}};}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67     \textcolor{comment}{// We cannot update a cbuffer until the GPU is done processing the commands}}
+\DoxyCodeLine{68     \textcolor{comment}{// that reference it.  So each frame needs their own cbuffers.}}
+\DoxyCodeLine{69    \textcolor{comment}{// std::unique\_ptr<UploadBuffer<FrameConstants>> FrameCB = nullptr;}}
+\DoxyCodeLine{70     std::unique\_ptr<UploadBuffer<PassConstants>> \mbox{\hyperlink{struct_frame_resource_a2a301e2320545cc025551247f9f60df5}{PassCB}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{71     std::unique\_ptr<UploadBuffer<MaterialConstants>> \mbox{\hyperlink{struct_frame_resource_a502a3bd044ed30d31280f4382cc07570}{MaterialCB}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{72     std::unique\_ptr<UploadBuffer<ObjectConstants>> \mbox{\hyperlink{struct_frame_resource_adec81cdfb788278fac8ad38066e6c18f}{ObjectCB}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74     \textcolor{comment}{// We cannot update a dynamic vertex buffer until the GPU is done processing}}
+\DoxyCodeLine{75     \textcolor{comment}{// the commands that reference it.  So each frame needs their own.}}
+\DoxyCodeLine{76     std::unique\_ptr<UploadBuffer<Vertex>> \mbox{\hyperlink{struct_frame_resource_a8e9570b0f6b4a868dd9882fbbffdd379}{WavesVB}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78     \textcolor{comment}{// Fence value to mark commands up to this fence point.  This lets us}}
+\DoxyCodeLine{79     \textcolor{comment}{// check if these frame resources are still in use by the GPU.}}
+\DoxyCodeLine{80     UINT64 \mbox{\hyperlink{struct_frame_resource_aa90bdd44edbdbebf156b7cdb01437b8a}{Fence}} = 0;}
+\DoxyCodeLine{81 \};}
+
+\end{DoxyCode}

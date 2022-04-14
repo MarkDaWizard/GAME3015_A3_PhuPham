@@ -1,0 +1,84 @@
+\hypertarget{class_air_craft}{}\doxysection{Air\+Craft Class Reference}
+\label{class_air_craft}\index{AirCraft@{AirCraft}}
+
+
+A plane that will act as an enemy character  
+
+
+
+
+{\ttfamily \#include $<$Air\+Craft.\+h$>$}
+
+Inheritance diagram for Air\+Craft\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_air_craft}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_air_craft_a7ffbd6f4da5c11951b751cc2767e6e0f}{Air\+Craft}} ()
+\item 
+\mbox{\hyperlink{class_air_craft_a674d4edcf77e4b9a8a09006184b114f0}{$\sim$\+Air\+Craft}} ()
+\item 
+virtual void \mbox{\hyperlink{class_air_craft_a59a7de946c87389ef84aaee6fcbc6523}{Update}} (float Delta\+Time, struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$Frame)
+\item 
+virtual void \mbox{\hyperlink{class_air_craft_a3c42ddee4359289e4bf1f69dae23e0ea}{Draw}} (ID3\+D12\+Graphics\+Command\+List $\ast$Cmd\+List, ID3\+D12\+Descriptor\+Heap $\ast$Desc, UINT Desc\+Size, struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$Frame, \mbox{\hyperlink{struct_mesh_geometry}{Mesh\+Geometry}} $\ast$Mesh, float Delta\+Time)
+\item 
+void \mbox{\hyperlink{class_air_craft_a696545c4cac9c0651c0212e1b6298684}{Set\+Start\+Pos}} (const XMFLOAT3 \&Pos)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A plane that will act as an enemy character 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_air_craft_a7ffbd6f4da5c11951b751cc2767e6e0f}\label{class_air_craft_a7ffbd6f4da5c11951b751cc2767e6e0f}} 
+\index{AirCraft@{AirCraft}!AirCraft@{AirCraft}}
+\index{AirCraft@{AirCraft}!AirCraft@{AirCraft}}
+\doxysubsubsection{\texorpdfstring{AirCraft()}{AirCraft()}}
+{\footnotesize\ttfamily Air\+Craft\+::\+Air\+Craft (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_air_craft_a674d4edcf77e4b9a8a09006184b114f0}\label{class_air_craft_a674d4edcf77e4b9a8a09006184b114f0}} 
+\index{AirCraft@{AirCraft}!````~AirCraft@{$\sim$AirCraft}}
+\index{````~AirCraft@{$\sim$AirCraft}!AirCraft@{AirCraft}}
+\doxysubsubsection{\texorpdfstring{$\sim$AirCraft()}{~AirCraft()}}
+{\footnotesize\ttfamily Air\+Craft\+::$\sim$\+Air\+Craft (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_air_craft_a3c42ddee4359289e4bf1f69dae23e0ea}\label{class_air_craft_a3c42ddee4359289e4bf1f69dae23e0ea}} 
+\index{AirCraft@{AirCraft}!Draw@{Draw}}
+\index{Draw@{Draw}!AirCraft@{AirCraft}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Air\+Craft\+::\+Draw (\begin{DoxyParamCaption}\item[{ID3\+D12\+Graphics\+Command\+List $\ast$}]{Cmd\+List,  }\item[{ID3\+D12\+Descriptor\+Heap $\ast$}]{Desc,  }\item[{UINT}]{Desc\+Size,  }\item[{struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$}]{Frame,  }\item[{\mbox{\hyperlink{struct_mesh_geometry}{Mesh\+Geometry}} $\ast$}]{Mesh,  }\item[{float}]{Delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_entity_a1b58246ff050872e0c11ac8682db6aae}{Entity}}.
+
+\mbox{\Hypertarget{class_air_craft_a696545c4cac9c0651c0212e1b6298684}\label{class_air_craft_a696545c4cac9c0651c0212e1b6298684}} 
+\index{AirCraft@{AirCraft}!SetStartPos@{SetStartPos}}
+\index{SetStartPos@{SetStartPos}!AirCraft@{AirCraft}}
+\doxysubsubsection{\texorpdfstring{SetStartPos()}{SetStartPos()}}
+{\footnotesize\ttfamily void Air\+Craft\+::\+Set\+Start\+Pos (\begin{DoxyParamCaption}\item[{const XMFLOAT3 \&}]{Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_air_craft_a59a7de946c87389ef84aaee6fcbc6523}\label{class_air_craft_a59a7de946c87389ef84aaee6fcbc6523}} 
+\index{AirCraft@{AirCraft}!Update@{Update}}
+\index{Update@{Update}!AirCraft@{AirCraft}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Air\+Craft\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time,  }\item[{struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$}]{Frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_entity_ac4025ea862585a94f6e27cecfae9423e}{Entity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+GAME3015\+\_\+\+A3\+\_\+\+Phu\+Pham/\mbox{\hyperlink{_air_craft_8h}{Air\+Craft.\+h}}\item 
+GAME3015\+\_\+\+A3\+\_\+\+Phu\+Pham/\mbox{\hyperlink{_air_craft_8cpp}{Air\+Craft.\+cpp}}\end{DoxyCompactItemize}

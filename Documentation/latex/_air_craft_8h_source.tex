@@ -1,0 +1,35 @@
+\hypertarget{_air_craft_8h_source}{}\doxysection{Air\+Craft.\+h}
+\label{_air_craft_8h_source}\index{GAME3015\_A3\_PhuPham/AirCraft.h@{GAME3015\_A3\_PhuPham/AirCraft.h}}
+\mbox{\hyperlink{_air_craft_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_entity_8h}{Entity.h}}"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{8 \textcolor{keyword}{class }\mbox{\hyperlink{class_air_craft}{AirCraft}}  :}
+\DoxyCodeLine{9     \textcolor{keyword}{public} \mbox{\hyperlink{class_entity}{Entity}}}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11 \textcolor{keyword}{public}:}
+\DoxyCodeLine{12     \mbox{\hyperlink{class_air_craft_a7ffbd6f4da5c11951b751cc2767e6e0f}{AirCraft}}();}
+\DoxyCodeLine{13     \mbox{\hyperlink{class_air_craft_a674d4edcf77e4b9a8a09006184b114f0}{\string~AirCraft}}();}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{private}:}
+\DoxyCodeLine{16     \textcolor{keywordtype}{float}   m\_Dir;}
+\DoxyCodeLine{17     XMFLOAT3 startingPos;}
+\DoxyCodeLine{18     \textcolor{keywordtype}{float} offsetLimit;}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{keyword}{public}:}
+\DoxyCodeLine{21     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_air_craft_a59a7de946c87389ef84aaee6fcbc6523}{Update}}(\textcolor{keywordtype}{float} DeltaTime, \textcolor{keyword}{struct} \mbox{\hyperlink{struct_frame_resource}{FrameResource}}* Frame);}
+\DoxyCodeLine{22     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_air_craft_a3c42ddee4359289e4bf1f69dae23e0ea}{Draw}}(ID3D12GraphicsCommandList* CmdList, ID3D12DescriptorHeap* Desc,}
+\DoxyCodeLine{23         UINT DescSize, \textcolor{keyword}{struct} \mbox{\hyperlink{struct_frame_resource}{FrameResource}}* Frame,}
+\DoxyCodeLine{24         \mbox{\hyperlink{struct_mesh_geometry}{MeshGeometry}}* Mesh, \textcolor{keywordtype}{float} DeltaTime);}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_air_craft_a696545c4cac9c0651c0212e1b6298684}{SetStartPos}}(\textcolor{keyword}{const} XMFLOAT3\& Pos)}
+\DoxyCodeLine{27     \{}
+\DoxyCodeLine{28         \mbox{\hyperlink{class_scene_node_ae2447b583e0037a45bbd33e1f4f07500}{m\_Pos}} = Pos;}
+\DoxyCodeLine{29         startingPos = Pos;}
+\DoxyCodeLine{30     \}}
+\DoxyCodeLine{31 \};}
+\DoxyCodeLine{32 }
+
+\end{DoxyCode}

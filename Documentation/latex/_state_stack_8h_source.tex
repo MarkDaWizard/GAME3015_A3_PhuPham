@@ -1,0 +1,91 @@
+\hypertarget{_state_stack_8h_source}{}\doxysection{State\+Stack.\+h}
+\label{_state_stack_8h_source}\index{GAME3015\_A3\_PhuPham/StateStack.h@{GAME3015\_A3\_PhuPham/StateStack.h}}
+\mbox{\hyperlink{_state_stack_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_state_8h}{State.h}}"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{keyword}{class }\mbox{\hyperlink{class_state_stack}{StateStack}}}
+\DoxyCodeLine{6 \{}
+\DoxyCodeLine{7 \textcolor{keyword}{public}:}
+\DoxyCodeLine{8     \textcolor{keyword}{enum} \mbox{\hyperlink{class_state_stack_af804142a55cd477767353e0abbcc218c}{Action}}}
+\DoxyCodeLine{9     \{}
+\DoxyCodeLine{10         \mbox{\hyperlink{class_state_stack_af804142a55cd477767353e0abbcc218ca5145d891d6770f76760d0b17cdfec0ab}{Push}},}
+\DoxyCodeLine{11         \mbox{\hyperlink{class_state_stack_af804142a55cd477767353e0abbcc218cada9c92031672d7627190e17bf881889a}{Pop}},}
+\DoxyCodeLine{12         \mbox{\hyperlink{class_state_stack_af804142a55cd477767353e0abbcc218cad2ef458a00c740b8bf761d90da84bc89}{Clear}}}
+\DoxyCodeLine{13     \};}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{public}:}
+\DoxyCodeLine{16     \textcolor{keyword}{explicit}            \mbox{\hyperlink{class_state_stack_ae782017c5644b6e0c9b782156b652153}{StateStack}}();}
+\DoxyCodeLine{17     \mbox{\hyperlink{class_state_stack_ab2d31c81756ff400d3edfac2a5c3456c}{\string~StateStack}}();}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19     \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{20     \textcolor{keywordtype}{void}                \mbox{\hyperlink{class_state_stack_a9b8d4eefb21a4f51495c63c77a6fe35f}{registerState}}(\mbox{\hyperlink{_game_info_8h_aca0282851edf63f774e5b52a5632f536}{State\_ID}} stateID,}
+\DoxyCodeLine{21         ID3D12Device* Device, ID3D12GraphicsCommandList* CmdList,}
+\DoxyCodeLine{22         \mbox{\hyperlink{struct_mesh_geometry}{MeshGeometry}}* Mesh, \textcolor{keywordtype}{int} CbvSize, \mbox{\hyperlink{class_game}{Game}}* game);}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24     \textcolor{keywordtype}{void}                \mbox{\hyperlink{class_state_stack_a18bebe45a807beaea4e9d299054a7fec}{update}}(\textcolor{keywordtype}{float} dt, \textcolor{keyword}{struct} \mbox{\hyperlink{struct_frame_resource}{FrameResource}}* Frame);}
+\DoxyCodeLine{25     \textcolor{keywordtype}{void}                \mbox{\hyperlink{class_state_stack_afca23afe9091c9803df86d491bfc70da}{draw}}(ID3D12GraphicsCommandList* CmdList, ID3D12DescriptorHeap* Desc,}
+\DoxyCodeLine{26         UINT DescSize, \textcolor{keyword}{struct} \mbox{\hyperlink{struct_frame_resource}{FrameResource}}* Frame,}
+\DoxyCodeLine{27         \textcolor{keywordtype}{float} DeltaTime);}
+\DoxyCodeLine{28     \textcolor{keywordtype}{void}                \mbox{\hyperlink{class_state_stack_ade804dc147e70ffb742d0f1e7ec22ce4}{handleEvent}}();}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     \textcolor{keywordtype}{void}                \mbox{\hyperlink{class_state_stack_a9099fc113d47a1bfebb165a48a3c99b1}{pushState}}(\mbox{\hyperlink{_game_info_8h_aca0282851edf63f774e5b52a5632f536}{State\_ID}} stateID);}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void}                \mbox{\hyperlink{class_state_stack_a7e050a57b798295c2344f1318765b5ee}{popState}}();}
+\DoxyCodeLine{32     \textcolor{keywordtype}{void}                \mbox{\hyperlink{class_state_stack_a49f0703d4037c3bf63494e64cb09898d}{clearStates}}();}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34     \textcolor{keywordtype}{bool}                \mbox{\hyperlink{class_state_stack_a4d9dc16e1a69640b6a85c224fe1c3f33}{isEmpty}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{keyword}{public}:}
+\DoxyCodeLine{38     \mbox{\hyperlink{class_state}{State}}*         \mbox{\hyperlink{class_state_stack_a52564a7afa787060abf3629c3a2e51be}{FindState}}(\mbox{\hyperlink{_game_info_8h_aca0282851edf63f774e5b52a5632f536}{State\_ID}} stateID);}
+\DoxyCodeLine{39     \mbox{\hyperlink{class_state}{State}}* \mbox{\hyperlink{class_state_stack_a27da1c8169dbfd932ce328644bdcd7ff}{GetCurrentState}}()}
+\DoxyCodeLine{40     \{}
+\DoxyCodeLine{41         \textcolor{keywordflow}{return} m\_Stack.back();}
+\DoxyCodeLine{42     \}}
+\DoxyCodeLine{43     \textcolor{keywordtype}{void}                \mbox{\hyperlink{class_state_stack_af664f95954b4621175c9fc0f9d30fdf0}{applyPendingChanges}}();}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 \textcolor{keyword}{private}:}
+\DoxyCodeLine{47     \textcolor{keyword}{struct }PendingChange}
+\DoxyCodeLine{48     \{}
+\DoxyCodeLine{49         \textcolor{keyword}{explicit}            PendingChange(\mbox{\hyperlink{_game_info_8h_a8bb1ef53467e4f61410d12822d922498}{Action}} action, \mbox{\hyperlink{_game_info_8h_aca0282851edf63f774e5b52a5632f536}{State\_ID}} stateID = \mbox{\hyperlink{_game_info_8h_aca0282851edf63f774e5b52a5632f536a6adf97f83acf6453d4a6a4b1070f3754}{State\_ID::None}});}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51         \mbox{\hyperlink{_game_info_8h_a8bb1ef53467e4f61410d12822d922498}{Action}}                action;}
+\DoxyCodeLine{52         \mbox{\hyperlink{_game_info_8h_aca0282851edf63f774e5b52a5632f536}{State\_ID}}            stateID;}
+\DoxyCodeLine{53     \};}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56 \textcolor{keyword}{private}:}
+\DoxyCodeLine{57     std::vector<State*> m\_Stack;}
+\DoxyCodeLine{58     std::vector<PendingChange>                          m\_PendingList;}
+\DoxyCodeLine{59     std::map<State\_ID, State*>  m\_Factories;}
+\DoxyCodeLine{60 \};}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{63 \textcolor{keywordtype}{void} \mbox{\hyperlink{class_state_stack_a9b8d4eefb21a4f51495c63c77a6fe35f}{StateStack::registerState}}(\mbox{\hyperlink{_game_info_8h_aca0282851edf63f774e5b52a5632f536}{State\_ID}} stateID,}
+\DoxyCodeLine{64     ID3D12Device* Device, ID3D12GraphicsCommandList* CmdList,}
+\DoxyCodeLine{65     \mbox{\hyperlink{struct_mesh_geometry}{MeshGeometry}}* Mesh, \textcolor{keywordtype}{int} CbvSize, \mbox{\hyperlink{class_game}{Game}}* game)}
+\DoxyCodeLine{66 \{}
+\DoxyCodeLine{67     \textcolor{keyword}{auto}    iter = m\_Factories.find(stateID);}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69     \textcolor{keywordflow}{if} (iter != m\_Factories.end())}
+\DoxyCodeLine{70     \{}
+\DoxyCodeLine{71         \textcolor{keyword}{delete} iter-\/>second;}
+\DoxyCodeLine{72         m\_Factories.erase(iter);}
+\DoxyCodeLine{73     \}}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75     T* Obj = \textcolor{keyword}{new} T(\textcolor{keyword}{this});}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77     Obj-\/>SetMesh(Mesh);}
+\DoxyCodeLine{78     Obj-\/>SetCbvSrvSize(CbvSize);}
+\DoxyCodeLine{79     Obj-\/>SetGame(game);}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81     Obj-\/>Init(Device, CmdList);}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83     m\_Factories.insert(std::make\_pair(stateID, (\mbox{\hyperlink{class_state}{State}}*)Obj));}
+\DoxyCodeLine{84 \}}
+\DoxyCodeLine{85 }
+
+\end{DoxyCode}

@@ -1,0 +1,252 @@
+\hypertarget{class_state}{}\doxysection{State Class Reference}
+\label{class_state}\index{State@{State}}
+
+
+{\ttfamily \#include $<$State.\+h$>$}
+
+Inheritance diagram for State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_state}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_state_a209c0a7e6b4686e786fb4a3d4f9542b2}{State}} (\mbox{\hyperlink{class_state_stack}{State\+Stack}} $\ast$stack)
+\item 
+virtual \mbox{\hyperlink{class_state_afab438d92b90dc18d194dbd9c9c8bab3}{$\sim$\+State}} ()
+\item 
+void \mbox{\hyperlink{class_state_af2414e7dba32a4d372a335d33e82ebee}{Set\+Mesh}} (\mbox{\hyperlink{struct_mesh_geometry}{Mesh\+Geometry}} $\ast$Mesh)
+\item 
+void \mbox{\hyperlink{class_state_ae5b620c00d2bc5c7a61cd27b088cd514}{Set\+Game}} (\mbox{\hyperlink{class_game}{Game}} $\ast$game)
+\item 
+void \mbox{\hyperlink{class_state_ac79241f8d62438ec279bba559fec988e}{Set\+Cbv\+Srv\+Size}} (int Size)
+\item 
+ID3\+D12\+Descriptor\+Heap $\ast$ \mbox{\hyperlink{class_state_a137898917715259b36e3549f66a1a286}{Get\+Srv\+Desc}} () const
+\item 
+virtual void \mbox{\hyperlink{class_state_aed5c7e2ef78f4c41ef0eb12c238e034e}{Process\+Input}} ()
+\item 
+virtual void \mbox{\hyperlink{class_state_a1b43aa14bd269075f9ab929739ba53cf}{Init}} (ID3\+D12\+Device $\ast$Device, ID3\+D12\+Graphics\+Command\+List $\ast$Cmd\+List)
+\item 
+virtual bool \mbox{\hyperlink{class_state_a14fe60c9fa817ae1ed8fcbb81f37618f}{Update}} (float Delta\+Time, struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$Frame)
+\item 
+virtual void \mbox{\hyperlink{class_state_a94c3eab9c7618c3f0e23b12e881aa7a6}{Draw}} (ID3\+D12\+Graphics\+Command\+List $\ast$Cmd\+List, ID3\+D12\+Descriptor\+Heap $\ast$Desc, UINT Desc\+Size, struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$Frame, float Delta\+Time)
+\item 
+virtual void \mbox{\hyperlink{class_state_a96faa03c593d9dcc5e0b9fd6b45c4b09}{Load\+Textures}} ()
+\item 
+void \mbox{\hyperlink{class_state_ad24d4445d4617ab58ffcd2adae10de6f}{Load\+Tex}} (std\+::string name, std\+::wstring path)
+\item 
+virtual void \mbox{\hyperlink{class_state_aaf1113ca186a7d32119317d8b6c16276}{Create\+Material}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_world}{World}} $\ast$ \mbox{\hyperlink{class_state_a5629e66648960aadd8b3d28451f3d73b}{m\+\_\+\+World}}
+\item 
+class \mbox{\hyperlink{class_game}{Game}} $\ast$ \mbox{\hyperlink{class_state_a895449d910b32e2286ff588e524e14ad}{m\+\_\+\+Game}}
+\item 
+std\+::map$<$ std\+::string, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{struct_material}{Material}} $>$ $>$ \mbox{\hyperlink{class_state_af0c4df444465ba00a0472e3b0f14e3b8}{m\+\_\+\+Materials}}
+\item 
+std\+::map$<$ std\+::string, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{struct_texture}{Texture}} $>$ $>$ \mbox{\hyperlink{class_state_ad1f9339d3831f9960cfaa3506767c19b}{m\+\_\+\+Textures}}
+\item 
+\mbox{\hyperlink{struct_mesh_geometry}{Mesh\+Geometry}} $\ast$ \mbox{\hyperlink{class_state_a3adcdcb3e0e02f5dd40174928f5c64f9}{m\+\_\+\+Mesh}}
+\item 
+\mbox{\hyperlink{class_command_queue}{Command\+Queue}} \mbox{\hyperlink{class_state_a68cb1e81c3ab77b5322cb36fc248b324}{m\+\_\+\+Command\+Queue}}
+\item 
+ID3\+D12\+Device $\ast$ \mbox{\hyperlink{class_state_afffb6ece4c08b536bf12ebdb87afc4f1}{m\+\_\+\+Device}}
+\item 
+ID3\+D12\+Graphics\+Command\+List $\ast$ \mbox{\hyperlink{class_state_afdfc2d7081525f8ed966e419ec917465}{m\+\_\+\+Cmd\+List}}
+\item 
+Com\+Ptr$<$ ID3\+D12\+Descriptor\+Heap $>$ \mbox{\hyperlink{class_state_a11a7d53a4af633154978ab0d20f3044b}{m\+\_\+\+Srv\+Descriptor\+Heap}} = nullptr
+\item 
+int \mbox{\hyperlink{class_state_aa126f552b12b3148a2f9c6137d3460da}{m\+\_\+\+Cbv\+Srv\+Descriptor\+Size}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_state_stack}{State\+Stack}} $\ast$ \mbox{\hyperlink{class_state_a67a374e62b303b59b632d6048460fc9a}{m\+\_\+\+Stack}}
+\item 
+\mbox{\hyperlink{class_scene_node}{Scene\+Node}} $\ast$ \mbox{\hyperlink{class_state_afc4c24a0e81d94697e55e6f03de5d20f}{m\+\_\+\+Root\+Node}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_state_a209c0a7e6b4686e786fb4a3d4f9542b2}\label{class_state_a209c0a7e6b4686e786fb4a3d4f9542b2}} 
+\index{State@{State}!State@{State}}
+\index{State@{State}!State@{State}}
+\doxysubsubsection{\texorpdfstring{State()}{State()}}
+{\footnotesize\ttfamily State\+::\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_state_stack}{State\+Stack}} $\ast$}]{stack }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_state_afab438d92b90dc18d194dbd9c9c8bab3}\label{class_state_afab438d92b90dc18d194dbd9c9c8bab3}} 
+\index{State@{State}!````~State@{$\sim$State}}
+\index{````~State@{$\sim$State}!State@{State}}
+\doxysubsubsection{\texorpdfstring{$\sim$State()}{~State()}}
+{\footnotesize\ttfamily State\+::$\sim$\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_state_aaf1113ca186a7d32119317d8b6c16276}\label{class_state_aaf1113ca186a7d32119317d8b6c16276}} 
+\index{State@{State}!CreateMaterial@{CreateMaterial}}
+\index{CreateMaterial@{CreateMaterial}!State@{State}}
+\doxysubsubsection{\texorpdfstring{CreateMaterial()}{CreateMaterial()}}
+{\footnotesize\ttfamily void State\+::\+Create\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_state_a94c3eab9c7618c3f0e23b12e881aa7a6}\label{class_state_a94c3eab9c7618c3f0e23b12e881aa7a6}} 
+\index{State@{State}!Draw@{Draw}}
+\index{Draw@{Draw}!State@{State}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void State\+::\+Draw (\begin{DoxyParamCaption}\item[{ID3\+D12\+Graphics\+Command\+List $\ast$}]{Cmd\+List,  }\item[{ID3\+D12\+Descriptor\+Heap $\ast$}]{Desc,  }\item[{UINT}]{Desc\+Size,  }\item[{struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$}]{Frame,  }\item[{float}]{Delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_game_state_af16d43fd32c6c311f2e04437492f176e}{Game\+State}}, \mbox{\hyperlink{class_menu_state_acdb1a16929c72514247473b6fa843908}{Menu\+State}}, \mbox{\hyperlink{class_pause_state_a8d34fffe9e80a299acfb06e00e442ff4}{Pause\+State}}, and \mbox{\hyperlink{class_title_state_a4aeae058f55db4319023d8448bff85ae}{Title\+State}}.
+
+\mbox{\Hypertarget{class_state_a137898917715259b36e3549f66a1a286}\label{class_state_a137898917715259b36e3549f66a1a286}} 
+\index{State@{State}!GetSrvDesc@{GetSrvDesc}}
+\index{GetSrvDesc@{GetSrvDesc}!State@{State}}
+\doxysubsubsection{\texorpdfstring{GetSrvDesc()}{GetSrvDesc()}}
+{\footnotesize\ttfamily ID3\+D12\+Descriptor\+Heap $\ast$ State\+::\+Get\+Srv\+Desc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_state_a1b43aa14bd269075f9ab929739ba53cf}\label{class_state_a1b43aa14bd269075f9ab929739ba53cf}} 
+\index{State@{State}!Init@{Init}}
+\index{Init@{Init}!State@{State}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void State\+::\+Init (\begin{DoxyParamCaption}\item[{ID3\+D12\+Device $\ast$}]{Device,  }\item[{ID3\+D12\+Graphics\+Command\+List $\ast$}]{Cmd\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_game_state_a0fdda2ce81ad2587e8cc7bac2ec98370}{Game\+State}}, \mbox{\hyperlink{class_menu_state_ac566c5c8e833fc4f7b71d65254057716}{Menu\+State}}, \mbox{\hyperlink{class_pause_state_a9a2e06a61e4a2afaaaffd9618079690f}{Pause\+State}}, and \mbox{\hyperlink{class_title_state_a76acfb26e9a514cdd145eee0335a7686}{Title\+State}}.
+
+\mbox{\Hypertarget{class_state_ad24d4445d4617ab58ffcd2adae10de6f}\label{class_state_ad24d4445d4617ab58ffcd2adae10de6f}} 
+\index{State@{State}!LoadTex@{LoadTex}}
+\index{LoadTex@{LoadTex}!State@{State}}
+\doxysubsubsection{\texorpdfstring{LoadTex()}{LoadTex()}}
+{\footnotesize\ttfamily void State\+::\+Load\+Tex (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::wstring}]{path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_state_a96faa03c593d9dcc5e0b9fd6b45c4b09}\label{class_state_a96faa03c593d9dcc5e0b9fd6b45c4b09}} 
+\index{State@{State}!LoadTextures@{LoadTextures}}
+\index{LoadTextures@{LoadTextures}!State@{State}}
+\doxysubsubsection{\texorpdfstring{LoadTextures()}{LoadTextures()}}
+{\footnotesize\ttfamily void State\+::\+Load\+Textures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_state_aed5c7e2ef78f4c41ef0eb12c238e034e}\label{class_state_aed5c7e2ef78f4c41ef0eb12c238e034e}} 
+\index{State@{State}!ProcessInput@{ProcessInput}}
+\index{ProcessInput@{ProcessInput}!State@{State}}
+\doxysubsubsection{\texorpdfstring{ProcessInput()}{ProcessInput()}}
+{\footnotesize\ttfamily void State\+::\+Process\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_game_state_aaf255a97137afb613c3509da8f01aa06}{Game\+State}}, \mbox{\hyperlink{class_menu_state_a52e464bad34b388a936de0d4f9374c24}{Menu\+State}}, \mbox{\hyperlink{class_pause_state_a2e3f69a4c530895bea1cfb1da4990d3e}{Pause\+State}}, and \mbox{\hyperlink{class_title_state_afb54d4df385d9dc9e4c1e28dc24647f8}{Title\+State}}.
+
+\mbox{\Hypertarget{class_state_ac79241f8d62438ec279bba559fec988e}\label{class_state_ac79241f8d62438ec279bba559fec988e}} 
+\index{State@{State}!SetCbvSrvSize@{SetCbvSrvSize}}
+\index{SetCbvSrvSize@{SetCbvSrvSize}!State@{State}}
+\doxysubsubsection{\texorpdfstring{SetCbvSrvSize()}{SetCbvSrvSize()}}
+{\footnotesize\ttfamily void State\+::\+Set\+Cbv\+Srv\+Size (\begin{DoxyParamCaption}\item[{int}]{Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_state_ae5b620c00d2bc5c7a61cd27b088cd514}\label{class_state_ae5b620c00d2bc5c7a61cd27b088cd514}} 
+\index{State@{State}!SetGame@{SetGame}}
+\index{SetGame@{SetGame}!State@{State}}
+\doxysubsubsection{\texorpdfstring{SetGame()}{SetGame()}}
+{\footnotesize\ttfamily void State\+::\+Set\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game}{Game}} $\ast$}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_state_af2414e7dba32a4d372a335d33e82ebee}\label{class_state_af2414e7dba32a4d372a335d33e82ebee}} 
+\index{State@{State}!SetMesh@{SetMesh}}
+\index{SetMesh@{SetMesh}!State@{State}}
+\doxysubsubsection{\texorpdfstring{SetMesh()}{SetMesh()}}
+{\footnotesize\ttfamily void State\+::\+Set\+Mesh (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mesh_geometry}{Mesh\+Geometry}} $\ast$}]{Mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_state_a14fe60c9fa817ae1ed8fcbb81f37618f}\label{class_state_a14fe60c9fa817ae1ed8fcbb81f37618f}} 
+\index{State@{State}!Update@{Update}}
+\index{Update@{Update}!State@{State}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily bool State\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time,  }\item[{struct \mbox{\hyperlink{struct_frame_resource}{Frame\+Resource}} $\ast$}]{Frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_game_state_ab9b9669eb75cfeb77ea1fdca93e3b4bb}{Game\+State}}, \mbox{\hyperlink{class_menu_state_a4f44397d193fa29e56bdd48881d39092}{Menu\+State}}, \mbox{\hyperlink{class_pause_state_abac345e23a55340b3cae9495f3ccd1ad}{Pause\+State}}, and \mbox{\hyperlink{class_title_state_abb0ed7cd3797a7b6245c2ba46371c619}{Title\+State}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_state_aa126f552b12b3148a2f9c6137d3460da}\label{class_state_aa126f552b12b3148a2f9c6137d3460da}} 
+\index{State@{State}!m\_CbvSrvDescriptorSize@{m\_CbvSrvDescriptorSize}}
+\index{m\_CbvSrvDescriptorSize@{m\_CbvSrvDescriptorSize}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_CbvSrvDescriptorSize}{m\_CbvSrvDescriptorSize}}
+{\footnotesize\ttfamily int State\+::m\+\_\+\+Cbv\+Srv\+Descriptor\+Size}
+
+\mbox{\Hypertarget{class_state_afdfc2d7081525f8ed966e419ec917465}\label{class_state_afdfc2d7081525f8ed966e419ec917465}} 
+\index{State@{State}!m\_CmdList@{m\_CmdList}}
+\index{m\_CmdList@{m\_CmdList}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_CmdList}{m\_CmdList}}
+{\footnotesize\ttfamily ID3\+D12\+Graphics\+Command\+List$\ast$ State\+::m\+\_\+\+Cmd\+List}
+
+\mbox{\Hypertarget{class_state_a68cb1e81c3ab77b5322cb36fc248b324}\label{class_state_a68cb1e81c3ab77b5322cb36fc248b324}} 
+\index{State@{State}!m\_CommandQueue@{m\_CommandQueue}}
+\index{m\_CommandQueue@{m\_CommandQueue}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_CommandQueue}{m\_CommandQueue}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_command_queue}{Command\+Queue}} State\+::m\+\_\+\+Command\+Queue}
+
+\mbox{\Hypertarget{class_state_afffb6ece4c08b536bf12ebdb87afc4f1}\label{class_state_afffb6ece4c08b536bf12ebdb87afc4f1}} 
+\index{State@{State}!m\_Device@{m\_Device}}
+\index{m\_Device@{m\_Device}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_Device}{m\_Device}}
+{\footnotesize\ttfamily ID3\+D12\+Device$\ast$ State\+::m\+\_\+\+Device}
+
+\mbox{\Hypertarget{class_state_a895449d910b32e2286ff588e524e14ad}\label{class_state_a895449d910b32e2286ff588e524e14ad}} 
+\index{State@{State}!m\_Game@{m\_Game}}
+\index{m\_Game@{m\_Game}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_Game}{m\_Game}}
+{\footnotesize\ttfamily class \mbox{\hyperlink{class_game}{Game}}$\ast$ State\+::m\+\_\+\+Game}
+
+\mbox{\Hypertarget{class_state_af0c4df444465ba00a0472e3b0f14e3b8}\label{class_state_af0c4df444465ba00a0472e3b0f14e3b8}} 
+\index{State@{State}!m\_Materials@{m\_Materials}}
+\index{m\_Materials@{m\_Materials}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_Materials}{m\_Materials}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{struct_material}{Material}}$>$ $>$ State\+::m\+\_\+\+Materials}
+
+\mbox{\Hypertarget{class_state_a3adcdcb3e0e02f5dd40174928f5c64f9}\label{class_state_a3adcdcb3e0e02f5dd40174928f5c64f9}} 
+\index{State@{State}!m\_Mesh@{m\_Mesh}}
+\index{m\_Mesh@{m\_Mesh}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_Mesh}{m\_Mesh}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_mesh_geometry}{Mesh\+Geometry}}$\ast$ State\+::m\+\_\+\+Mesh}
+
+\mbox{\Hypertarget{class_state_afc4c24a0e81d94697e55e6f03de5d20f}\label{class_state_afc4c24a0e81d94697e55e6f03de5d20f}} 
+\index{State@{State}!m\_RootNode@{m\_RootNode}}
+\index{m\_RootNode@{m\_RootNode}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_RootNode}{m\_RootNode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene_node}{Scene\+Node}}$\ast$ State\+::m\+\_\+\+Root\+Node\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_state_a11a7d53a4af633154978ab0d20f3044b}\label{class_state_a11a7d53a4af633154978ab0d20f3044b}} 
+\index{State@{State}!m\_SrvDescriptorHeap@{m\_SrvDescriptorHeap}}
+\index{m\_SrvDescriptorHeap@{m\_SrvDescriptorHeap}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_SrvDescriptorHeap}{m\_SrvDescriptorHeap}}
+{\footnotesize\ttfamily Com\+Ptr$<$ID3\+D12\+Descriptor\+Heap$>$ State\+::m\+\_\+\+Srv\+Descriptor\+Heap = nullptr}
+
+\mbox{\Hypertarget{class_state_a67a374e62b303b59b632d6048460fc9a}\label{class_state_a67a374e62b303b59b632d6048460fc9a}} 
+\index{State@{State}!m\_Stack@{m\_Stack}}
+\index{m\_Stack@{m\_Stack}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_Stack}{m\_Stack}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_state_stack}{State\+Stack}}$\ast$ State\+::m\+\_\+\+Stack\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_state_ad1f9339d3831f9960cfaa3506767c19b}\label{class_state_ad1f9339d3831f9960cfaa3506767c19b}} 
+\index{State@{State}!m\_Textures@{m\_Textures}}
+\index{m\_Textures@{m\_Textures}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_Textures}{m\_Textures}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{struct_texture}{Texture}}$>$ $>$ State\+::m\+\_\+\+Textures}
+
+\mbox{\Hypertarget{class_state_a5629e66648960aadd8b3d28451f3d73b}\label{class_state_a5629e66648960aadd8b3d28451f3d73b}} 
+\index{State@{State}!m\_World@{m\_World}}
+\index{m\_World@{m\_World}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_World}{m\_World}}
+{\footnotesize\ttfamily class \mbox{\hyperlink{class_world}{World}}$\ast$ State\+::m\+\_\+\+World}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+GAME3015\+\_\+\+A3\+\_\+\+Phu\+Pham/\mbox{\hyperlink{_state_8h}{State.\+h}}\item 
+GAME3015\+\_\+\+A3\+\_\+\+Phu\+Pham/\mbox{\hyperlink{_state_8cpp}{State.\+cpp}}\end{DoxyCompactItemize}

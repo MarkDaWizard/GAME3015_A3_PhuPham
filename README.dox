@@ -1,26 +1,22 @@
 /**
 @mainpage Game Engine Development II Final Assignment
 
-@author Jeongyeon Jane Hong and Pauleen Lam
+@author Phu Pham
 
 @attention 
+	Game Engine Development 2 Final Assignment
 
-@note PLAYER CONTROLS:
+@note Controls:
 
-@note TitleState
-[P key -> Go to MainMenu]
-
-@note MainMenuState
-[Arrows Up/Down + Enter Key -> Select Button]
-[Play -> Go to GameState]
-[Exit -> Close Window]
-
-@note GameState
-[WASD -> Player Movement]
-[P -> Pause Key]
-
-@note PauseState
-[P -> Back to Game]
-[R -> Go to MainMenu]
+	Title Screen: 	Press E to Start Game
+	
+	Main Menu	: 	Press Enter to select
+					Use Arrow keys to navigate
+					
+	Game Screen	:	Press P to Pause
+					Use WASD to control player
+					
+	Pause Screen: 	Press R to resume
+					Press Q to quit to main menu
 
 **/

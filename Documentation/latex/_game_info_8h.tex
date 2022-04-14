@@ -1,0 +1,113 @@
+\hypertarget{_game_info_8h}{}\doxysection{GAME3015\+\_\+\+A3\+\_\+\+Phu\+Pham/\+Game\+Info.h File Reference}
+\label{_game_info_8h}\index{GAME3015\_A3\_PhuPham/GameInfo.h@{GAME3015\_A3\_PhuPham/GameInfo.h}}
+{\ttfamily \#include \char`\"{}Common/\+Upload\+Buffer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common/\+Geometry\+Generator.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common/d3d\+App.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Frame\+Resource.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$queue$>$}\newline
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_game_info_8h_a8bb1ef53467e4f61410d12822d922498}{Action}} \{ \newline
+\mbox{\hyperlink{_game_info_8h_a8bb1ef53467e4f61410d12822d922498ade59105332f8e296b0b84c3b5da66a95}{Move\+Left}}
+, \mbox{\hyperlink{_game_info_8h_a8bb1ef53467e4f61410d12822d922498a7dbf4542a2fc0222c56d2bb43aa9d8a4}{Move\+Right}}
+, \mbox{\hyperlink{_game_info_8h_a8bb1ef53467e4f61410d12822d922498ab8a4e588d73d34d9d2edc06dacf095a1}{Move\+Front}}
+, \mbox{\hyperlink{_game_info_8h_a8bb1ef53467e4f61410d12822d922498a370d30c0b02ccbf79f7b87d8f8b19f75}{Move\+Back}}
+, \newline
+\mbox{\hyperlink{_game_info_8h_a8bb1ef53467e4f61410d12822d922498a1a68377b1e1396c49f254e18bf1f8a1c}{Fire}}
+, \mbox{\hyperlink{_game_info_8h_a8bb1ef53467e4f61410d12822d922498a0fd430d535aa1902074d95d60a93f744}{Max}}
+ \}
+\begin{DoxyCompactList}\small\item\em Action enums for character game objects \end{DoxyCompactList}\item 
+enum class \mbox{\hyperlink{_game_info_8h_aca0282851edf63f774e5b52a5632f536}{State\+\_\+\+ID}} \{ \newline
+\mbox{\hyperlink{_game_info_8h_aca0282851edf63f774e5b52a5632f536a6adf97f83acf6453d4a6a4b1070f3754}{None}}
+, \mbox{\hyperlink{_game_info_8h_aca0282851edf63f774e5b52a5632f536ab78a3223503896721cca1303f776159b}{Title}}
+, \mbox{\hyperlink{_game_info_8h_aca0282851edf63f774e5b52a5632f536ab61541208db7fa7dba42c85224405911}{Menu}}
+, \mbox{\hyperlink{_game_info_8h_aca0282851edf63f774e5b52a5632f536a63d72051e901c069f8aa1b32aa0c43bb}{Game}}
+, \newline
+\mbox{\hyperlink{_game_info_8h_aca0282851edf63f774e5b52a5632f536a105b296a83f9c105355403f3332af50f}{Pause}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{_game_info_8h_a7c82b7821d2662eb6e0cfdc08a6c4bd4}{g\+Num\+Frame\+Resources}} = 3
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_game_info_8h_a8bb1ef53467e4f61410d12822d922498}\label{_game_info_8h_a8bb1ef53467e4f61410d12822d922498}} 
+\index{GameInfo.h@{GameInfo.h}!Action@{Action}}
+\index{Action@{Action}!GameInfo.h@{GameInfo.h}}
+\doxysubsubsection{\texorpdfstring{Action}{Action}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_game_info_8h_a8bb1ef53467e4f61410d12822d922498}{Action}}}
+
+
+
+Action enums for character game objects 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MoveLeft@{MoveLeft}!GameInfo.h@{GameInfo.h}}\index{GameInfo.h@{GameInfo.h}!MoveLeft@{MoveLeft}}}\mbox{\Hypertarget{_game_info_8h_a8bb1ef53467e4f61410d12822d922498ade59105332f8e296b0b84c3b5da66a95}\label{_game_info_8h_a8bb1ef53467e4f61410d12822d922498ade59105332f8e296b0b84c3b5da66a95}} 
+Move\+Left&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MoveRight@{MoveRight}!GameInfo.h@{GameInfo.h}}\index{GameInfo.h@{GameInfo.h}!MoveRight@{MoveRight}}}\mbox{\Hypertarget{_game_info_8h_a8bb1ef53467e4f61410d12822d922498a7dbf4542a2fc0222c56d2bb43aa9d8a4}\label{_game_info_8h_a8bb1ef53467e4f61410d12822d922498a7dbf4542a2fc0222c56d2bb43aa9d8a4}} 
+Move\+Right&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MoveFront@{MoveFront}!GameInfo.h@{GameInfo.h}}\index{GameInfo.h@{GameInfo.h}!MoveFront@{MoveFront}}}\mbox{\Hypertarget{_game_info_8h_a8bb1ef53467e4f61410d12822d922498ab8a4e588d73d34d9d2edc06dacf095a1}\label{_game_info_8h_a8bb1ef53467e4f61410d12822d922498ab8a4e588d73d34d9d2edc06dacf095a1}} 
+Move\+Front&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MoveBack@{MoveBack}!GameInfo.h@{GameInfo.h}}\index{GameInfo.h@{GameInfo.h}!MoveBack@{MoveBack}}}\mbox{\Hypertarget{_game_info_8h_a8bb1ef53467e4f61410d12822d922498a370d30c0b02ccbf79f7b87d8f8b19f75}\label{_game_info_8h_a8bb1ef53467e4f61410d12822d922498a370d30c0b02ccbf79f7b87d8f8b19f75}} 
+Move\+Back&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Fire@{Fire}!GameInfo.h@{GameInfo.h}}\index{GameInfo.h@{GameInfo.h}!Fire@{Fire}}}\mbox{\Hypertarget{_game_info_8h_a8bb1ef53467e4f61410d12822d922498a1a68377b1e1396c49f254e18bf1f8a1c}\label{_game_info_8h_a8bb1ef53467e4f61410d12822d922498a1a68377b1e1396c49f254e18bf1f8a1c}} 
+Fire&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Max@{Max}!GameInfo.h@{GameInfo.h}}\index{GameInfo.h@{GameInfo.h}!Max@{Max}}}\mbox{\Hypertarget{_game_info_8h_a8bb1ef53467e4f61410d12822d922498a0fd430d535aa1902074d95d60a93f744}\label{_game_info_8h_a8bb1ef53467e4f61410d12822d922498a0fd430d535aa1902074d95d60a93f744}} 
+Max&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_game_info_8h_aca0282851edf63f774e5b52a5632f536}\label{_game_info_8h_aca0282851edf63f774e5b52a5632f536}} 
+\index{GameInfo.h@{GameInfo.h}!State\_ID@{State\_ID}}
+\index{State\_ID@{State\_ID}!GameInfo.h@{GameInfo.h}}
+\doxysubsubsection{\texorpdfstring{State\_ID}{State\_ID}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{_game_info_8h_aca0282851edf63f774e5b52a5632f536}{State\+\_\+\+ID}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!GameInfo.h@{GameInfo.h}}\index{GameInfo.h@{GameInfo.h}!None@{None}}}\mbox{\Hypertarget{_game_info_8h_aca0282851edf63f774e5b52a5632f536a6adf97f83acf6453d4a6a4b1070f3754}\label{_game_info_8h_aca0282851edf63f774e5b52a5632f536a6adf97f83acf6453d4a6a4b1070f3754}} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Title@{Title}!GameInfo.h@{GameInfo.h}}\index{GameInfo.h@{GameInfo.h}!Title@{Title}}}\mbox{\Hypertarget{_game_info_8h_aca0282851edf63f774e5b52a5632f536ab78a3223503896721cca1303f776159b}\label{_game_info_8h_aca0282851edf63f774e5b52a5632f536ab78a3223503896721cca1303f776159b}} 
+Title&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Menu@{Menu}!GameInfo.h@{GameInfo.h}}\index{GameInfo.h@{GameInfo.h}!Menu@{Menu}}}\mbox{\Hypertarget{_game_info_8h_aca0282851edf63f774e5b52a5632f536ab61541208db7fa7dba42c85224405911}\label{_game_info_8h_aca0282851edf63f774e5b52a5632f536ab61541208db7fa7dba42c85224405911}} 
+Menu&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Game@{Game}!GameInfo.h@{GameInfo.h}}\index{GameInfo.h@{GameInfo.h}!Game@{Game}}}\mbox{\Hypertarget{_game_info_8h_aca0282851edf63f774e5b52a5632f536a63d72051e901c069f8aa1b32aa0c43bb}\label{_game_info_8h_aca0282851edf63f774e5b52a5632f536a63d72051e901c069f8aa1b32aa0c43bb}} 
+Game&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Pause@{Pause}!GameInfo.h@{GameInfo.h}}\index{GameInfo.h@{GameInfo.h}!Pause@{Pause}}}\mbox{\Hypertarget{_game_info_8h_aca0282851edf63f774e5b52a5632f536a105b296a83f9c105355403f3332af50f}\label{_game_info_8h_aca0282851edf63f774e5b52a5632f536a105b296a83f9c105355403f3332af50f}} 
+Pause&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_game_info_8h_a7c82b7821d2662eb6e0cfdc08a6c4bd4}\label{_game_info_8h_a7c82b7821d2662eb6e0cfdc08a6c4bd4}} 
+\index{GameInfo.h@{GameInfo.h}!gNumFrameResources@{gNumFrameResources}}
+\index{gNumFrameResources@{gNumFrameResources}!GameInfo.h@{GameInfo.h}}
+\doxysubsubsection{\texorpdfstring{gNumFrameResources}{gNumFrameResources}}
+{\footnotesize\ttfamily const int g\+Num\+Frame\+Resources = 3}
+

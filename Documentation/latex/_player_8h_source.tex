@@ -1,0 +1,41 @@
+\hypertarget{_player_8h_source}{}\doxysection{Player.\+h}
+\label{_player_8h_source}\index{GAME3015\_A3\_PhuPham/Player.h@{GAME3015\_A3\_PhuPham/Player.h}}
+\mbox{\hyperlink{_player_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_entity_8h}{Entity.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_command_queue_8h}{CommandQueue.h}}"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_player}{Player}}  :}
+\DoxyCodeLine{10     \textcolor{keyword}{public} \mbox{\hyperlink{class_entity}{Entity}}}
+\DoxyCodeLine{11 \{}
+\DoxyCodeLine{12 \textcolor{keyword}{public}:}
+\DoxyCodeLine{13     \mbox{\hyperlink{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{Player}}();}
+\DoxyCodeLine{14     \mbox{\hyperlink{class_player_a749d2c00e1fe0f5c2746f7505a58c062}{\string~Player}}();}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{private}:}
+\DoxyCodeLine{17     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char}   m\_Key[\mbox{\hyperlink{_game_info_8h_a8bb1ef53467e4f61410d12822d922498a0fd430d535aa1902074d95d60a93f744}{Action::Max}}];}
+\DoxyCodeLine{18     \textcolor{keywordtype}{float} horizontalBounds;}
+\DoxyCodeLine{19     \textcolor{keywordtype}{float} verticalBoundFront;}
+\DoxyCodeLine{20     \textcolor{keywordtype}{float} verticalBoundBack;}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{public}:}
+\DoxyCodeLine{23     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_player_aca9b612be8a0496a923c008cf18c0802}{AssignKey}}(\mbox{\hyperlink{_game_info_8h_a8bb1ef53467e4f61410d12822d922498}{Action}} action, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} Key)}
+\DoxyCodeLine{24     \{}
+\DoxyCodeLine{25         m\_Key[action] = Key;}
+\DoxyCodeLine{26     \}}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{keyword}{public}:}
+\DoxyCodeLine{34     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_player_a7b8ee868edd6de769ec57985b19a04d5}{Update}}(\textcolor{keywordtype}{float} DeltaTime, \textcolor{keyword}{struct} \mbox{\hyperlink{struct_frame_resource}{FrameResource}}* Frame);}
+\DoxyCodeLine{40     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_player_ae5251180c77c2b6fac97f2684d8b102e}{Draw}}(ID3D12GraphicsCommandList* CmdList, ID3D12DescriptorHeap* Desc,}
+\DoxyCodeLine{41         UINT DescSize, \textcolor{keyword}{struct} \mbox{\hyperlink{struct_frame_resource}{FrameResource}}* Frame,}
+\DoxyCodeLine{42         \mbox{\hyperlink{struct_mesh_geometry}{MeshGeometry}}* Mesh, \textcolor{keywordtype}{float} DeltaTime);}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \textcolor{keyword}{public}:}
+\DoxyCodeLine{45     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_player_aadf1649f15bc76f1452cd8fda103e003}{HandleEvent}}(\mbox{\hyperlink{class_command_queue}{CommandQueue}}\& Queue);}
+\DoxyCodeLine{46     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_player_adbe714d7a5f02a5ff4e21829e27662e7}{HandleRealtimeInput}}(\mbox{\hyperlink{class_command_queue}{CommandQueue}}\& Queue);}
+\DoxyCodeLine{47 \};}
+\DoxyCodeLine{48 }
+
+\end{DoxyCode}

@@ -1,0 +1,70 @@
+\hypertarget{_state_8h_source}{}\doxysection{State.\+h}
+\label{_state_8h_source}\index{GAME3015\_A3\_PhuPham/State.h@{GAME3015\_A3\_PhuPham/State.h}}
+\mbox{\hyperlink{_state_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_game_info_8h}{GameInfo.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_scene_node_8h}{SceneNode.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_command_queue_8h}{CommandQueue.h}}"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{class_state_stack}{StateStack}};}
+\DoxyCodeLine{8 \textcolor{keyword}{class }\mbox{\hyperlink{class_state}{State}}}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10 \textcolor{keyword}{public}:}
+\DoxyCodeLine{11     \mbox{\hyperlink{class_state_a209c0a7e6b4686e786fb4a3d4f9542b2}{State}}(\mbox{\hyperlink{class_state_stack}{StateStack}}* stack);}
+\DoxyCodeLine{12     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_state_afab438d92b90dc18d194dbd9c9c8bab3}{\string~State}}();}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_state_stack}{StateStack}}* \mbox{\hyperlink{class_state_a67a374e62b303b59b632d6048460fc9a}{m\_Stack}};}
+\DoxyCodeLine{16     \mbox{\hyperlink{class_scene_node}{SceneNode}}* \mbox{\hyperlink{class_state_afc4c24a0e81d94697e55e6f03de5d20f}{m\_RootNode}};}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{public}:}
+\DoxyCodeLine{19     \textcolor{keyword}{class }\mbox{\hyperlink{class_world}{World}}* \mbox{\hyperlink{class_state_a5629e66648960aadd8b3d28451f3d73b}{m\_World}};}
+\DoxyCodeLine{20     \textcolor{keyword}{class }\mbox{\hyperlink{class_game}{Game}}* \mbox{\hyperlink{class_state_a895449d910b32e2286ff588e524e14ad}{m\_Game}};}
+\DoxyCodeLine{21     std::map<std::string, std::unique\_ptr<Material>> \mbox{\hyperlink{class_state_af0c4df444465ba00a0472e3b0f14e3b8}{m\_Materials}};}
+\DoxyCodeLine{22     std::map<std::string, std::unique\_ptr<Texture>> \mbox{\hyperlink{class_state_ad1f9339d3831f9960cfaa3506767c19b}{m\_Textures}};}
+\DoxyCodeLine{23     \mbox{\hyperlink{struct_mesh_geometry}{MeshGeometry}}* \mbox{\hyperlink{class_state_a3adcdcb3e0e02f5dd40174928f5c64f9}{m\_Mesh}};}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_command_queue}{CommandQueue}}    \mbox{\hyperlink{class_state_a68cb1e81c3ab77b5322cb36fc248b324}{m\_CommandQueue}};}
+\DoxyCodeLine{25     ID3D12Device* \mbox{\hyperlink{class_state_afffb6ece4c08b536bf12ebdb87afc4f1}{m\_Device}};}
+\DoxyCodeLine{26     ID3D12GraphicsCommandList* \mbox{\hyperlink{class_state_afdfc2d7081525f8ed966e419ec917465}{m\_CmdList}};}
+\DoxyCodeLine{27     ComPtr<ID3D12DescriptorHeap> \mbox{\hyperlink{class_state_a11a7d53a4af633154978ab0d20f3044b}{m\_SrvDescriptorHeap}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{28     \textcolor{keywordtype}{int}         \mbox{\hyperlink{class_state_aa126f552b12b3148a2f9c6137d3460da}{m\_CbvSrvDescriptorSize}};}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{keyword}{public}:}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_state_af2414e7dba32a4d372a335d33e82ebee}{SetMesh}}(\mbox{\hyperlink{struct_mesh_geometry}{MeshGeometry}}* Mesh)}
+\DoxyCodeLine{32     \{}
+\DoxyCodeLine{33         \mbox{\hyperlink{class_state_a3adcdcb3e0e02f5dd40174928f5c64f9}{m\_Mesh}} = Mesh;}
+\DoxyCodeLine{34     \}}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_state_ae5b620c00d2bc5c7a61cd27b088cd514}{SetGame}}(\mbox{\hyperlink{class_game}{Game}}* game)}
+\DoxyCodeLine{37     \{}
+\DoxyCodeLine{38         \mbox{\hyperlink{class_state_a895449d910b32e2286ff588e524e14ad}{m\_Game}} = game;}
+\DoxyCodeLine{39     \}}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_state_ac79241f8d62438ec279bba559fec988e}{SetCbvSrvSize}}(\textcolor{keywordtype}{int} Size)}
+\DoxyCodeLine{42     \{}
+\DoxyCodeLine{43         \mbox{\hyperlink{class_state_aa126f552b12b3148a2f9c6137d3460da}{m\_CbvSrvDescriptorSize}} = Size;}
+\DoxyCodeLine{44     \}}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46     ID3D12DescriptorHeap* \mbox{\hyperlink{class_state_a137898917715259b36e3549f66a1a286}{GetSrvDesc}}()\textcolor{keyword}{    const}}
+\DoxyCodeLine{47 \textcolor{keyword}{    }\{}
+\DoxyCodeLine{48         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_state_a11a7d53a4af633154978ab0d20f3044b}{m\_SrvDescriptorHeap}}.Get();}
+\DoxyCodeLine{49     \}}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \textcolor{keyword}{public}:}
+\DoxyCodeLine{52     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_state_aed5c7e2ef78f4c41ef0eb12c238e034e}{ProcessInput}}();}
+\DoxyCodeLine{53     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_state_a1b43aa14bd269075f9ab929739ba53cf}{Init}}(ID3D12Device* Device, ID3D12GraphicsCommandList* CmdList);}
+\DoxyCodeLine{54     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_state_a14fe60c9fa817ae1ed8fcbb81f37618f}{Update}}(\textcolor{keywordtype}{float} DeltaTime, \textcolor{keyword}{struct} \mbox{\hyperlink{struct_frame_resource}{FrameResource}}* Frame);}
+\DoxyCodeLine{55     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_state_a94c3eab9c7618c3f0e23b12e881aa7a6}{Draw}}(ID3D12GraphicsCommandList* CmdList, ID3D12DescriptorHeap* Desc,}
+\DoxyCodeLine{56         UINT DescSize, \textcolor{keyword}{struct} \mbox{\hyperlink{struct_frame_resource}{FrameResource}}* Frame,}
+\DoxyCodeLine{57         \textcolor{keywordtype}{float} DeltaTime);}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59 \textcolor{keyword}{public}:}
+\DoxyCodeLine{60     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_state_a96faa03c593d9dcc5e0b9fd6b45c4b09}{LoadTextures}}();}
+\DoxyCodeLine{61     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_state_ad24d4445d4617ab58ffcd2adae10de6f}{LoadTex}}(std::string name, std::wstring path);}
+\DoxyCodeLine{62     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_state_aaf1113ca186a7d32119317d8b6c16276}{CreateMaterial}}();}
+\DoxyCodeLine{63 \};}
+\DoxyCodeLine{64 }
+
+\end{DoxyCode}
